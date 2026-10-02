@@ -87,7 +87,8 @@
 ### 文档与仓库
 - `docs/verification/*.log` 为文档引用的证据，已在 `.gitignore` 显式放行（`!docs/verification/*.log`），会随仓交接。
 - **测试 fixture 不入库**：`app/src/debug/assets/*.mp3` 与 `app/src/androidTest/assets/cleanup-ab/` 被忽略（个人音频，版权）；**本机存在，换机需自备**，否则 20 样本 AB / 部分 instrumentation 无法重跑。
-- 会话残留（**待用户裁决，未删**）：根目录 `README.md` 已被删除、`README 2.md` 未入库；`docs/plan/` 同时有 V2.0 的 `.zip` 与解压目录（`.zip` 为原始归档，解压目录为现役 SDD 源）。
+- 会话残留（**待用户裁决，未删**）：根目录 `README.md` 已被删除、`README 2.md` 未入库。
+- SDD 包归档：`docs/plan/` 的解压目录为现役 SDD 源（spec/plan/tasks 所在）；原始 `.zip` 归档已于 2026-10-02 按用户指令删除（内容与解压目录一致）。
 
 ### 交接纪律
 - 本仓治理规则见根 `AGENTS.md`；模型分工见根 `USER_MODEL_OVERRIDE.md`。
