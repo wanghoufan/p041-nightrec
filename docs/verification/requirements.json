@@ -1,0 +1,356 @@
+[
+  {
+    "requirement": "FR-001",
+    "text": "MUST 通过“开始今晚”创建且仅创建一个活动 Night Session。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-002",
+    "text": "MUST 使用 `IDLE/STARTING/RECORDING/AWAY/INTERRUPTED/RECOVERING/STOPPING/PROCESSING/READY` 单一状态机。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-003",
+    "text": "MUST 提供“暂离”，停止采集/实时识曲但不结束 Session。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-004",
+    "text": "MUST 提供“回来了，继续记录”，恢复同一 Session。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-005",
+    "text": "MUST 仅在明确确认“结束今晚”后停止。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-006",
+    "text": "锁屏/普通切 App MUST NOT 等同暂离或结束。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-007",
+    "text": "MUST 在 Android 支持的后台/锁屏场景用可见前台服务持续麦克风采集。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-008",
+    "text": "MUST 使用可恢复安全分片，并在用户层表现为一条逻辑音轨。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-009",
+    "text": "MUST 在分片封口后持久化恢复元数据。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-010",
+    "text": "MUST 同时维护 logical time 与 wall time。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-011",
+    "text": "MUST 用 Gap 表示 AWAY/INTERRUPTED，不伪造静音音频。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-012",
+    "text": "网络/识曲失败 MUST NOT 停止 Original。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-013",
+    "text": "进程重启 MUST 能发现未正常结束 Session 并恢复已落盘数据。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-014",
+    "text": "存储风险 MUST 优先保护 Original。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-015",
+    "text": "MUST 通过可替换 RecognitionEngine 持续识曲并接收音频时间戳结果。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-016",
+    "text": "MUST 对重复结果去重。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-017",
+    "text": "MUST 使用稳定确认规则防止瞬时误切。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-018",
+    "text": "MUST 创建 Track Marker，记录歌曲身份、首次可信时间、确认时间、来源、状态。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-019",
+    "text": "MUST 支持补识别。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-020",
+    "text": "MUST 显示未知区间并支持重新识别。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-021",
+    "text": "同歌隔开后再次出现 MUST 可形成新 occurrence。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-022",
+    "text": "迟到结果 MUST 按音频时间戳排序。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-023",
+    "text": "MUST 为 Night Session 提供单一逻辑进度条和总逻辑时长。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-024",
+    "text": "MUST 将 logical seek 映射到正确分片/offset。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-025",
+    "text": "MUST 默认跳过 Gap。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-026",
+    "text": "点击 Marker MUST 播放现场对应位置。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-027",
+    "text": "结束后即使 AI 未完成，Original MUST 可播放。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-028",
+    "text": "MUST 显示 Marker 对应真实时间。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-029",
+    "text": "Original MUST 不可变。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-030",
+    "text": "Clean MUST 独立保存并有状态。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-031",
+    "text": "MUST 局部检测附近讲话，并只对高置信区间保守处理。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-032",
+    "text": "MUST 避免把歌曲主唱按 vocals 全量删除。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-033",
+    "text": "Original/Clean 切换 MUST 保持同一 logical position。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-034",
+    "text": "Clean 失败 MUST 不影响 Original。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-035",
+    "text": "抢麦/通话/系统异常 MUST 进入 `INTERRUPTED`。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-036",
+    "text": "MUST 尝试恢复；失败时提供恢复同一 Session 的操作通知。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-037",
+    "text": "活动 Session MUST 有持续状态通知。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-038",
+    "text": "MUST 区分 AWAY 与 INTERRUPTED。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-039",
+    "text": "MUST 持久化历史 Session。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-040",
+    "text": "MUST 支持 Marker 重新识别/合并/删除。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-041",
+    "text": "MUST 支持收藏歌曲出现位置或转场区间。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-042",
+    "text": "MAY 提供外部音乐服务入口，但 MUST 与现场播放器解耦。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-043",
+    "text": "首次使用 MUST 说明持续录音、本地保存、向 AudD 上传短音频片段（可能含现场讲话）、识曲计费/限额与合法使用责任；关闭识曲或未同意则不上传。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-044",
+    "text": "MUST 不默认上传整晚 Original。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-045",
+    "text": "MUST 不把 secret/token/private key 写入仓库或 release logs。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-046",
+    "text": "MUST 将 Original 与数据库存放在 app-private storage，除非用户主动导出。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-047",
+    "text": "产品名 MUST 固定 NightRec；业务对象固定 Night Session。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-048",
+    "text": "MUST 支持 Light/Dark，两者页面层级一致并默认跟随系统。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-049",
+    "text": "首页、开始设置、Recording、Away、结束确认、Processing、Session 完成、播放器、时间轴、转场详情、歌曲详情、历史、设置 MUST 与 V2.0 原型的信息架构对应。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-050",
+    "text": "Recording/Away/Interrupted/Processing 状态 MUST 一眼可区分。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-051",
+    "text": "主要触控目标 MUST 至少 48dp；关键文本支持系统字体缩放且不遮挡核心操作。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-052",
+    "text": "MUST 使用包内 NightRec Android icon 作为视觉真源并实现 adaptive icon。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-053",
+    "text": "Android 13+ MUST 提供 monochrome/themed icon。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-054",
+    "text": "MUST 使用包内启动画面作为视觉参考，并避免系统 Splash + 自定义 SplashActivity 双启动。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-055",
+    "text": "MUST 在主题切换时保持正在录制/播放状态，不重建 Session。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-056",
+    "text": "MUST 使用“AI 净化/尽量降低现场讲话干扰”而非绝对去除承诺。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-057",
+    "text": "V1 手机端 MUST 以 portrait 为主要布局；横屏不作为核心验收目标。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-058",
+    "text": "底层分片、识曲原始 observation 等实现细节 MUST 不暴露给普通用户。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "requirement": "FR-059",
+    "text": "MUST 显示本地识曲请求计数和请求上限；达到上限暂停实时/补识别/手动请求，继续 Original，不自动购买额度；网络重试也计数。",
+    "status": "OPEN",
+    "evidence": []
+  }
+]

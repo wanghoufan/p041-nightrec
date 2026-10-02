@@ -1,0 +1,11 @@
+{
+  "attempted": 2,
+  "limit": 300,
+  "deviceAttempted": 93,
+  "hostAttempted": 2,
+  "sharedOverlap": 1,
+  "totalConsumed": 94,
+  "remaining": 206,
+  "updated": "2026-10-02",
+  "note": "host 'attempted' counts host-side requests (auth + upload); deviceAttempted is read from device shared_prefs/audd-budget.xml. sharedOverlap=1 initial auth counted on both sides. Authoritative shared budget is enforced on-device by RequestBudget; never reset to 0/1. Exhaustion stops only network recognition; Original capture continues."
+}

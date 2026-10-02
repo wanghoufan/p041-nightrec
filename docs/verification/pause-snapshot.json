@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-10-02T17:02:40.662293+08:00",
+  "timezone": "Asia/Shanghai",
+  "userRequestedPause": true,
+  "device": "indq5xfi6hovay4d",
+  "recordingServiceRunning": false,
+  "appForceStopped": true,
+  "deviceAttempted": 86,
+  "hostAttempted": 2,
+  "sharedInitialAuthRequest": 1,
+  "combinedAttempted": 87,
+  "limit": 300,
+  "remainingLocalBudget": 213,
+  "apk": {
+    "path": "/Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 73007581,
+    "sha256": "7c827cce08334713f2a8c14971ab6a623cc004d639d0bd9e0e74b9812ab02c6d",
+    "status": "Spike harness; latest build not reinstalled after last source changes; not final MVP"
+  },
+  "lastUnitResults": [
+    {
+      "name": "com.nightrec.app.DomainTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-02T08:45:46.521Z"
+    },
+    {
+      "name": "com.nightrec.app.CleanupTest",
+      "tests": "6",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-02T08:45:46.506Z"
+    },
+    {
+      "name": "com.nightrec.app.ReliabilityTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-02T08:45:46.530Z"
+    }
+  ]
+}

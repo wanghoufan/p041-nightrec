@@ -1,0 +1,3728 @@
+{
+  "modelSHA256": "e193da5676a2fdb7a3702c10fba62aa27d76f64e4534467443811c1a2ff1667d",
+  "sampleCount": 20,
+  "candidateWindows": 7,
+  "kind": "controlled mixtures; not real-club quality acceptance",
+  "samples": [
+    {
+      "sample": "00.wav",
+      "checksum": "c4a08e3db4cc685b8d3e1b73669f1506315c0b8cb3eab3b00b92ea01fcc0a5a7",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.0006311900215223432,
+          "singing": 0.031774215400218964,
+          "imbalance": 1.0461921691894531,
+          "latencyMs": 1.67012499878183,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.6652874946594238
+            },
+            {
+              "class": "Singing",
+              "score": 0.031774215400218964
+            },
+            {
+              "class": "Song",
+              "score": 0.026944413781166077
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.02326391451060772
+            },
+            {
+              "class": "Rock music",
+              "score": 0.021604131907224655
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.00040172896115109324,
+          "singing": 0.012874607928097248,
+          "imbalance": 1.0292668342590332,
+          "latencyMs": 0.6797920214012265,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8555176258087158
+            },
+            {
+              "class": "Song",
+              "score": 0.016266165301203728
+            },
+            {
+              "class": "Singing",
+              "score": 0.012874607928097248
+            },
+            {
+              "class": "Independent music",
+              "score": 0.010163831524550915
+            },
+            {
+              "class": "Pop music",
+              "score": 0.00495742354542017
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.000556453422177583,
+          "singing": 0.008490296080708504,
+          "imbalance": 1.0351893901824951,
+          "latencyMs": 0.6357079837471247,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8481578826904297
+            },
+            {
+              "class": "Song",
+              "score": 0.011042985133826733
+            },
+            {
+              "class": "Independent music",
+              "score": 0.010021270252764225
+            },
+            {
+              "class": "Grunge",
+              "score": 0.008977220393717289
+            },
+            {
+              "class": "Singing",
+              "score": 0.008490296080708504
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.0007278492557816207,
+          "singing": 0.001284886966459453,
+          "imbalance": 1.0435757637023926,
+          "latencyMs": 0.6765419966541231,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9173673391342163
+            },
+            {
+              "class": "Skateboard",
+              "score": 0.005840013734996319
+            },
+            {
+              "class": "Rock music",
+              "score": 0.004957780707627535
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.0046899463050067425
+            },
+            {
+              "class": "Vehicle",
+              "score": 0.0030477293767035007
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.0012593684950843453,
+          "singing": 0.0007988665602169931,
+          "imbalance": 1.031623363494873,
+          "latencyMs": 0.648624962195754,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9711025953292847
+            },
+            {
+              "class": "Soundtrack music",
+              "score": 0.004502383526414633
+            },
+            {
+              "class": "Theme music",
+              "score": 0.004437304567545652
+            },
+            {
+              "class": "Background music",
+              "score": 0.002872354816645384
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.002813418162986636
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.00162807060405612,
+          "singing": 0.022489557042717934,
+          "imbalance": 1.080686330795288,
+          "latencyMs": 0.667458982206881,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7109692096710205
+            },
+            {
+              "class": "Singing",
+              "score": 0.022489557042717934
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.01613066904246807
+            },
+            {
+              "class": "Pop music",
+              "score": 0.012689903378486633
+            },
+            {
+              "class": "Song",
+              "score": 0.009832390584051609
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "01.wav",
+      "checksum": "528cc9cf8230ec5d59dc1ffa0c9e65546522b890f98eeeee457dcb71e2769937",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.0003295658971183002,
+          "singing": 0.019502604380249977,
+          "imbalance": 1.048457384109497,
+          "latencyMs": 0.7864999934099615,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8354484438896179
+            },
+            {
+              "class": "Song",
+              "score": 0.022583533078432083
+            },
+            {
+              "class": "Singing",
+              "score": 0.019502604380249977
+            },
+            {
+              "class": "Independent music",
+              "score": 0.017625825479626656
+            },
+            {
+              "class": "Rock music",
+              "score": 0.006415138486772776
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.0020635968539863825,
+          "singing": 0.011747009120881557,
+          "imbalance": 1.045931339263916,
+          "latencyMs": 0.7961669471114874,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7725929617881775
+            },
+            {
+              "class": "Singing",
+              "score": 0.011747009120881557
+            },
+            {
+              "class": "Song",
+              "score": 0.008311600424349308
+            },
+            {
+              "class": "Pop music",
+              "score": 0.004807525314390659
+            },
+            {
+              "class": "Independent music",
+              "score": 0.004804661031812429
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.0004819829191546887,
+          "singing": 0.01471514068543911,
+          "imbalance": 1.079912781715393,
+          "latencyMs": 0.7280420395545661,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.818023681640625
+            },
+            {
+              "class": "Independent music",
+              "score": 0.025148874148726463
+            },
+            {
+              "class": "Singing",
+              "score": 0.01471514068543911
+            },
+            {
+              "class": "Rock music",
+              "score": 0.012788785621523857
+            },
+            {
+              "class": "Psychedelic rock",
+              "score": 0.009853473864495754
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.00037563746445812285,
+          "singing": 5.196693382458761e-05,
+          "imbalance": 1.0738767385482788,
+          "latencyMs": 0.7194589707069099,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9747791886329651
+            },
+            {
+              "class": "Video game music",
+              "score": 0.008453852497041225
+            },
+            {
+              "class": "Soundtrack music",
+              "score": 0.0032365124206990004
+            },
+            {
+              "class": "Theme music",
+              "score": 0.0031265276484191418
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.002069244161248207
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.0002146909391740337,
+          "singing": 0.023701082915067673,
+          "imbalance": 1.0743963718414307,
+          "latencyMs": 0.9065829799510539,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9008417129516602
+            },
+            {
+              "class": "Rock music",
+              "score": 0.13236378133296967
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.1155262440443039
+            },
+            {
+              "class": "Grunge",
+              "score": 0.0285777784883976
+            },
+            {
+              "class": "Psychedelic rock",
+              "score": 0.02726023830473423
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.002123209647834301,
+          "singing": 0.010197598487138748,
+          "imbalance": 1.0665473937988281,
+          "latencyMs": 0.6762089906260371,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8763799071311951
+            },
+            {
+              "class": "Pop music",
+              "score": 0.013101915828883648
+            },
+            {
+              "class": "Singing",
+              "score": 0.010197598487138748
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.004096630960702896
+            },
+            {
+              "class": "Song",
+              "score": 0.0036162708420306444
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "02.wav",
+      "checksum": "88a63a9c13cd055cae8803cf3397fc539867ca893af8e42b38cad3699bced3cb",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.00036055565578863025,
+          "singing": 0.00460381293669343,
+          "imbalance": 1.063515543937683,
+          "latencyMs": 0.6713750190101564,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9056524634361267
+            },
+            {
+              "class": "Song",
+              "score": 0.005165822338312864
+            },
+            {
+              "class": "Singing",
+              "score": 0.00460381293669343
+            },
+            {
+              "class": "Independent music",
+              "score": 0.00415841955691576
+            },
+            {
+              "class": "Rock music",
+              "score": 0.003494880860671401
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.00010022922651842237,
+          "singing": 0.014175163581967354,
+          "imbalance": 1.0930602550506592,
+          "latencyMs": 0.6279590306803584,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7123364210128784
+            },
+            {
+              "class": "Independent music",
+              "score": 0.05261464789509773
+            },
+            {
+              "class": "Grunge",
+              "score": 0.04176868125796318
+            },
+            {
+              "class": "Song",
+              "score": 0.02253849245607853
+            },
+            {
+              "class": "Singing",
+              "score": 0.014175163581967354
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.0010691381758078933,
+          "singing": 0.011674618348479271,
+          "imbalance": 1.1211998462677002,
+          "latencyMs": 0.6354999495670199,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9242303371429443
+            },
+            {
+              "class": "Singing",
+              "score": 0.011674618348479271
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.011535047553479671
+            },
+            {
+              "class": "Song",
+              "score": 0.007718486245721579
+            },
+            {
+              "class": "Pop music",
+              "score": 0.007644748780876398
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.0010423761559650302,
+          "singing": 0.008506214246153831,
+          "imbalance": 1.0733531713485718,
+          "latencyMs": 0.6363749853335321,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.924731433391571
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.01555480808019638
+            },
+            {
+              "class": "Rock music",
+              "score": 0.010529648512601852
+            },
+            {
+              "class": "Singing",
+              "score": 0.008506214246153831
+            },
+            {
+              "class": "Pop music",
+              "score": 0.005110043566673994
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.0012851542560383677,
+          "singing": 0.01103871688246727,
+          "imbalance": 1.129082202911377,
+          "latencyMs": 0.6302089896053076,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8206165432929993
+            },
+            {
+              "class": "Singing",
+              "score": 0.01103871688246727
+            },
+            {
+              "class": "Pop music",
+              "score": 0.010554194450378418
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.005005928687751293
+            },
+            {
+              "class": "Song",
+              "score": 0.004848312120884657
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.0010099285282194614,
+          "singing": 0.02698875591158867,
+          "imbalance": 1.131770133972168,
+          "latencyMs": 0.6262909737415612,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7858865261077881
+            },
+            {
+              "class": "Pop music",
+              "score": 0.031149672344326973
+            },
+            {
+              "class": "Singing",
+              "score": 0.02698875591158867
+            },
+            {
+              "class": "Song",
+              "score": 0.01628456637263298
+            },
+            {
+              "class": "Music of Asia",
+              "score": 0.01383171509951353
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "03.wav",
+      "checksum": "183fe06d8a718c7dd4d3533060b9316474a8af35df6c6d60e08c3cf2c6153301",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.00044036880717612803,
+          "singing": 0.01817179284989834,
+          "imbalance": 1.0961663722991943,
+          "latencyMs": 0.6583749782294035,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8202701210975647
+            },
+            {
+              "class": "Independent music",
+              "score": 0.02990342676639557
+            },
+            {
+              "class": "Song",
+              "score": 0.02565934509038925
+            },
+            {
+              "class": "Singing",
+              "score": 0.01817179284989834
+            },
+            {
+              "class": "Grunge",
+              "score": 0.011274985037744045
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.00011406755220377818,
+          "singing": 0.010687967762351036,
+          "imbalance": 1.1780868768692017,
+          "latencyMs": 0.6220000213943422,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9141401648521423
+            },
+            {
+              "class": "Psychedelic rock",
+              "score": 0.04751618206501007
+            },
+            {
+              "class": "Rock music",
+              "score": 0.024556046351790428
+            },
+            {
+              "class": "Independent music",
+              "score": 0.022608557716012
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.011127231642603874
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.001501336577348411,
+          "singing": 0.00047885565436445177,
+          "imbalance": 1.1324076652526855,
+          "latencyMs": 0.631249975413084,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.936694324016571
+            },
+            {
+              "class": "Vehicle",
+              "score": 0.0035430167336016893
+            },
+            {
+              "class": "Boat, Water vehicle",
+              "score": 0.0030926119070500135
+            },
+            {
+              "class": "Bicycle",
+              "score": 0.0029534620698541403
+            },
+            {
+              "class": "Skateboard",
+              "score": 0.0028936921153217554
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.0010134903714060783,
+          "singing": 0.028038207441568375,
+          "imbalance": 1.2136662006378174,
+          "latencyMs": 0.6258750217966735,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.6766670942306519
+            },
+            {
+              "class": "Singing",
+              "score": 0.028038207441568375
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.02569376863539219
+            },
+            {
+              "class": "Rock music",
+              "score": 0.01512505766004324
+            },
+            {
+              "class": "Pop music",
+              "score": 0.007700393442064524
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.0016648363089188933,
+          "singing": 0.018988188356161118,
+          "imbalance": 1.14687979221344,
+          "latencyMs": 0.6109169917181134,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8386144638061523
+            },
+            {
+              "class": "Pop music",
+              "score": 0.019386468455195427
+            },
+            {
+              "class": "Singing",
+              "score": 0.018988188356161118
+            },
+            {
+              "class": "Song",
+              "score": 0.0071293944492936134
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.005165183916687965
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.0018596185836941004,
+          "singing": 0.0002801786467898637,
+          "imbalance": 1.1494567394256592,
+          "latencyMs": 0.6917910068295896,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.5315697193145752
+            },
+            {
+              "class": "Run",
+              "score": 0.023034576326608658
+            },
+            {
+              "class": "Horse",
+              "score": 0.021748272702097893
+            },
+            {
+              "class": "Clip-clop",
+              "score": 0.018002202734351158
+            },
+            {
+              "class": "Boat, Water vehicle",
+              "score": 0.0158479493111372
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "04.wav",
+      "checksum": "8267a07a4225f51ec5c096a0bb190757c31184bfededb2845efab579d17ee57b",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.000415635178796947,
+          "singing": 0.024254044517874718,
+          "imbalance": 1.2064779996871948,
+          "latencyMs": 0.8880409877747297,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8638898730278015
+            },
+            {
+              "class": "Rock music",
+              "score": 0.02707773633301258
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.026602592319250107
+            },
+            {
+              "class": "Singing",
+              "score": 0.024254044517874718
+            },
+            {
+              "class": "Psychedelic rock",
+              "score": 0.023851560428738594
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.0006375211523845792,
+          "singing": 0.0002547544427216053,
+          "imbalance": 1.3119970560073853,
+          "latencyMs": 0.7626669830642641,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.884148895740509
+            },
+            {
+              "class": "Bicycle",
+              "score": 0.002258392982184887
+            },
+            {
+              "class": "Explosion",
+              "score": 0.002205401426181197
+            },
+            {
+              "class": "Boat, Water vehicle",
+              "score": 0.002157326554879546
+            },
+            {
+              "class": "Vehicle",
+              "score": 0.0018547014333307743
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.00023701638565398753,
+          "singing": 0.03182634338736534,
+          "imbalance": 1.162735939025879,
+          "latencyMs": 0.6414169911295176,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8397610187530518
+            },
+            {
+              "class": "Rock music",
+              "score": 0.0931582823395729
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.0830899327993393
+            },
+            {
+              "class": "Singing",
+              "score": 0.03182634338736534
+            },
+            {
+              "class": "Grunge",
+              "score": 0.02575630508363247
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.0013416965957731009,
+          "singing": 0.06738400459289551,
+          "imbalance": 1.2131178379058838,
+          "latencyMs": 0.6289579905569553,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.5734509229660034
+            },
+            {
+              "class": "Singing",
+              "score": 0.06738400459289551
+            },
+            {
+              "class": "Pop music",
+              "score": 0.06010386720299721
+            },
+            {
+              "class": "Music of Asia",
+              "score": 0.013494530692696571
+            },
+            {
+              "class": "Song",
+              "score": 0.011516418308019638
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.0006972596165724099,
+          "singing": 0.008710000663995743,
+          "imbalance": 1.33756422996521,
+          "latencyMs": 0.6279170047491789,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8786997199058533
+            },
+            {
+              "class": "Pop music",
+              "score": 0.009457150474190712
+            },
+            {
+              "class": "Singing",
+              "score": 0.008710000663995743
+            },
+            {
+              "class": "Song",
+              "score": 0.007231329567730427
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.003781154751777649
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.001349375699646771,
+          "singing": 0.0007159120286814868,
+          "imbalance": 1.1428887844085693,
+          "latencyMs": 0.7212920463643968,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.969484269618988
+            },
+            {
+              "class": "Smash, crash",
+              "score": 0.004498157650232315
+            },
+            {
+              "class": "Burst, pop",
+              "score": 0.004093179013580084
+            },
+            {
+              "class": "Angry music",
+              "score": 0.0034847024362534285
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.0031478607561439276
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "05.wav",
+      "checksum": "f97b5051fbbd76fef86a1be0172e238138c42aa367d7a9ca9210474975d1cd0d",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.00474307918921113,
+          "singing": 0.013118808157742023,
+          "imbalance": 1.4737401008605957,
+          "latencyMs": 0.7316670380532742,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8404130339622498
+            },
+            {
+              "class": "Singing",
+              "score": 0.013118808157742023
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.01218956895172596
+            },
+            {
+              "class": "Rock music",
+              "score": 0.005485836882144213
+            },
+            {
+              "class": "Pop music",
+              "score": 0.004977880045771599
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.0006466216291300952,
+          "singing": 0.036240775138139725,
+          "imbalance": 1.3091880083084106,
+          "latencyMs": 0.6945410277694464,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7959492206573486
+            },
+            {
+              "class": "Singing",
+              "score": 0.036240775138139725
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.021845733746886253
+            },
+            {
+              "class": "Pop music",
+              "score": 0.019976545125246048
+            },
+            {
+              "class": "Rock music",
+              "score": 0.016923129558563232
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.00031947519164532423,
+          "singing": 0.038077618926763535,
+          "imbalance": 1.3863974809646606,
+          "latencyMs": 0.6660409853793681,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7990217208862305
+            },
+            {
+              "class": "Singing",
+              "score": 0.038077618926763535
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.015733523294329643
+            },
+            {
+              "class": "Rock music",
+              "score": 0.014190618880093098
+            },
+            {
+              "class": "Song",
+              "score": 0.012865274213254452
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.0016652230406180024,
+          "singing": 0.021143557503819466,
+          "imbalance": 1.268930435180664,
+          "latencyMs": 0.6456670234911144,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8202027082443237
+            },
+            {
+              "class": "Pop music",
+              "score": 0.023653650656342506
+            },
+            {
+              "class": "Singing",
+              "score": 0.021143557503819466
+            },
+            {
+              "class": "Song",
+              "score": 0.01584835723042488
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.006870665587484837
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.0014266181970015168,
+          "singing": 0.01607164740562439,
+          "imbalance": 1.3111884593963623,
+          "latencyMs": 0.626583001576364,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7353956699371338
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.02389097772538662
+            },
+            {
+              "class": "Singing",
+              "score": 0.01607164740562439
+            },
+            {
+              "class": "Rock music",
+              "score": 0.011973276734352112
+            },
+            {
+              "class": "Song",
+              "score": 0.00689592445269227
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.0014714159769937396,
+          "singing": 0.010542504489421844,
+          "imbalance": 1.4967507123947144,
+          "latencyMs": 0.622207997366786,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8103456497192383
+            },
+            {
+              "class": "Pop music",
+              "score": 0.010584486648440361
+            },
+            {
+              "class": "Singing",
+              "score": 0.010542504489421844
+            },
+            {
+              "class": "Christian music",
+              "score": 0.00872955285012722
+            },
+            {
+              "class": "Song",
+              "score": 0.0073922788724303246
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "06.wav",
+      "checksum": "7b79eba3e791ea08a192a681e0fc0171c8e442e3b44e662b6799e5ba6d2465df",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.002166079357266426,
+          "singing": 0.0062419334426522255,
+          "imbalance": 1.4761255979537964,
+          "latencyMs": 0.6349169998429716,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8360914587974548
+            },
+            {
+              "class": "Pop music",
+              "score": 0.006793110631406307
+            },
+            {
+              "class": "Singing",
+              "score": 0.0062419334426522255
+            },
+            {
+              "class": "Music of Asia",
+              "score": 0.0032784442882984877
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.0026799021288752556
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.0009154084254987538,
+          "singing": 0.06672341376543045,
+          "imbalance": 1.5511668920516968,
+          "latencyMs": 0.629834015853703,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.6916296482086182
+            },
+            {
+              "class": "Singing",
+              "score": 0.06672341376543045
+            },
+            {
+              "class": "Pop music",
+              "score": 0.025032727047801018
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.02124304510653019
+            },
+            {
+              "class": "Song",
+              "score": 0.016990365460515022
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.001942071015946567,
+          "singing": 0.016812000423669815,
+          "imbalance": 1.5009113550186157,
+          "latencyMs": 0.6295419880189002,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9000107645988464
+            },
+            {
+              "class": "Pop music",
+              "score": 0.021456247195601463
+            },
+            {
+              "class": "Singing",
+              "score": 0.016812000423669815
+            },
+            {
+              "class": "Song",
+              "score": 0.007240633014589548
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.0049849399365484715
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.001342392642982304,
+          "singing": 0.019343864172697067,
+          "imbalance": 1.548078179359436,
+          "latencyMs": 0.6266250275075436,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.6451542377471924
+            },
+            {
+              "class": "Singing",
+              "score": 0.019343864172697067
+            },
+            {
+              "class": "Song",
+              "score": 0.011003218591213226
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.008086188696324825
+            },
+            {
+              "class": "Rock music",
+              "score": 0.007245845161378384
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.0002925689914263785,
+          "singing": 0.015623227693140507,
+          "imbalance": 1.4070736169815063,
+          "latencyMs": 0.625832995865494,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8976664543151855
+            },
+            {
+              "class": "Rock music",
+              "score": 0.05947359651327133
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.03388911485671997
+            },
+            {
+              "class": "Punk rock",
+              "score": 0.02877342887222767
+            },
+            {
+              "class": "Grunge",
+              "score": 0.02780785784125328
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.005370143335312605,
+          "singing": 0.0025907414965331554,
+          "imbalance": 1.6932892799377441,
+          "latencyMs": 0.6447919877246022,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.945982813835144
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.005382760427892208
+            },
+            {
+              "class": "Speech",
+              "score": 0.005370143335312605
+            },
+            {
+              "class": "Pop music",
+              "score": 0.005141186527907848
+            },
+            {
+              "class": "Song",
+              "score": 0.004048943053930998
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "07.wav",
+      "checksum": "ca7ac2602acbba1068ecbeea4c59be989bfe7b9c76fa85a78b5cf5591a132816",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.000779628346208483,
+          "singing": 0.05072564631700516,
+          "imbalance": 1.6419928073883057,
+          "latencyMs": 0.6835829699411988,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7044582962989807
+            },
+            {
+              "class": "Singing",
+              "score": 0.05072564631700516
+            },
+            {
+              "class": "Pop music",
+              "score": 0.04699135944247246
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.012428736314177513
+            },
+            {
+              "class": "Song",
+              "score": 0.011189009062945843
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.0021873083896934986,
+          "singing": 0.04647962749004364,
+          "imbalance": 1.6731363534927368,
+          "latencyMs": 0.6455839611589909,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.6843571066856384
+            },
+            {
+              "class": "Singing",
+              "score": 0.04647962749004364
+            },
+            {
+              "class": "Pop music",
+              "score": 0.024770962074398994
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.019761184230446815
+            },
+            {
+              "class": "Shout",
+              "score": 0.010287617333233356
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.0008006315329112113,
+          "singing": 0.015796707943081856,
+          "imbalance": 1.8369158506393433,
+          "latencyMs": 0.6563329952768981,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8085882067680359
+            },
+            {
+              "class": "Pop music",
+              "score": 0.024662015959620476
+            },
+            {
+              "class": "Song",
+              "score": 0.016656849533319473
+            },
+            {
+              "class": "Singing",
+              "score": 0.015796707943081856
+            },
+            {
+              "class": "Music of Asia",
+              "score": 0.008164978586137295
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.003938743378967047,
+          "singing": 0.001297217677347362,
+          "imbalance": 1.663882851600647,
+          "latencyMs": 0.684790953528136,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8470207452774048
+            },
+            {
+              "class": "Skateboard",
+              "score": 0.017535824328660965
+            },
+            {
+              "class": "Bicycle",
+              "score": 0.00814621802419424
+            },
+            {
+              "class": "Boat, Water vehicle",
+              "score": 0.005631832405924797
+            },
+            {
+              "class": "Vehicle",
+              "score": 0.004870871547609568
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.0005262016784399748,
+          "singing": 0.010178955271840096,
+          "imbalance": 2.1292941570281982,
+          "latencyMs": 0.784417032264173,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8342618346214294
+            },
+            {
+              "class": "Independent music",
+              "score": 0.027552124112844467
+            },
+            {
+              "class": "Grunge",
+              "score": 0.02652188576757908
+            },
+            {
+              "class": "Rock music",
+              "score": 0.016895387321710587
+            },
+            {
+              "class": "Singing",
+              "score": 0.010178955271840096
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.00034208723809570074,
+          "singing": 0.005368884652853012,
+          "imbalance": 1.7122814655303955,
+          "latencyMs": 1.2773750349879265,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9350825548171997
+            },
+            {
+              "class": "Song",
+              "score": 0.010985933244228363
+            },
+            {
+              "class": "Pop music",
+              "score": 0.0076141199097037315
+            },
+            {
+              "class": "Electronic music",
+              "score": 0.007327341008931398
+            },
+            {
+              "class": "Singing",
+              "score": 0.005368884652853012
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "08.wav",
+      "checksum": "d8587270023d08212e88efa7e2a7a3776e280a2002538708014474e6776c0d9e",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.003943350166082382,
+          "singing": 0.04168683663010597,
+          "imbalance": 2.248466968536377,
+          "latencyMs": 0.7590409950353205,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.6091267466545105
+            },
+            {
+              "class": "Singing",
+              "score": 0.04168683663010597
+            },
+            {
+              "class": "Song",
+              "score": 0.013905864208936691
+            },
+            {
+              "class": "Pop music",
+              "score": 0.011119128204882145
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.010434536263346672
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.0028120246715843678,
+          "singing": 0.040030427277088165,
+          "imbalance": 1.9963804483413696,
+          "latencyMs": 0.6398750119842589,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7304511070251465
+            },
+            {
+              "class": "Singing",
+              "score": 0.040030427277088165
+            },
+            {
+              "class": "Pop music",
+              "score": 0.032402172684669495
+            },
+            {
+              "class": "Shout",
+              "score": 0.011074014008045197
+            },
+            {
+              "class": "Song",
+              "score": 0.00729090953245759
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.007643222343176603,
+          "singing": 0.01218599732965231,
+          "imbalance": 2.03902268409729,
+          "latencyMs": 0.6608329713344574,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.60760098695755
+            },
+            {
+              "class": "Singing",
+              "score": 0.01218599732965231
+            },
+            {
+              "class": "Song",
+              "score": 0.007725267671048641
+            },
+            {
+              "class": "Speech",
+              "score": 0.007643222343176603
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.007328478619456291
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.0018119333544746041,
+          "singing": 0.021680394187569618,
+          "imbalance": 2.284029006958008,
+          "latencyMs": 0.7579160155728459,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7936750054359436
+            },
+            {
+              "class": "Rock music",
+              "score": 0.03248313069343567
+            },
+            {
+              "class": "Singing",
+              "score": 0.021680394187569618
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.0179614145308733
+            },
+            {
+              "class": "Grunge",
+              "score": 0.014128928072750568
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.003821664024144411,
+          "singing": 0.008211236447095871,
+          "imbalance": 2.4095420837402344,
+          "latencyMs": 0.6379160331562161,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8835679888725281
+            },
+            {
+              "class": "Singing",
+              "score": 0.008211236447095871
+            },
+            {
+              "class": "Pop music",
+              "score": 0.007084450218826532
+            },
+            {
+              "class": "Song",
+              "score": 0.005595581606030464
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.003831814043223858
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.12338505685329437,
+          "singing": 0.00031959335319697857,
+          "imbalance": 2.000737190246582,
+          "latencyMs": 0.6275000050663948,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.39744406938552856
+            },
+            {
+              "class": "Speech",
+              "score": 0.12338505685329437
+            },
+            {
+              "class": "Bicycle",
+              "score": 0.004051589407026768
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.003248468739911914
+            },
+            {
+              "class": "Vehicle",
+              "score": 0.00265746028162539
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "09.wav",
+      "checksum": "0d298afd37e44fb15f85d178da0b5a54e2b83d07f2514bcbdd9867d46d1490f7",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.029382143169641495,
+          "singing": 0.007094849366694689,
+          "imbalance": 2.194037437438965,
+          "latencyMs": 0.6445419858209789,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.6780818104743958
+            },
+            {
+              "class": "Speech",
+              "score": 0.029382143169641495
+            },
+            {
+              "class": "Singing",
+              "score": 0.007094849366694689
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.005023390054702759
+            },
+            {
+              "class": "Rock music",
+              "score": 0.0029869372956454754
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.004835748579353094,
+          "singing": 0.010957214049994946,
+          "imbalance": 3.0775833129882812,
+          "latencyMs": 0.6238750065676868,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.6769545674324036
+            },
+            {
+              "class": "Singing",
+              "score": 0.010957214049994946
+            },
+            {
+              "class": "Pop music",
+              "score": 0.008602073416113853
+            },
+            {
+              "class": "Song",
+              "score": 0.005840922240167856
+            },
+            {
+              "class": "Speech",
+              "score": 0.004835748579353094
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.035989996045827866,
+          "singing": 0.0017203785246238112,
+          "imbalance": 2.395886182785034,
+          "latencyMs": 0.6373749929480255,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7812592387199402
+            },
+            {
+              "class": "Speech",
+              "score": 0.035989996045827866
+            },
+            {
+              "class": "Bicycle",
+              "score": 0.004042644053697586
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.003848094493150711
+            },
+            {
+              "class": "Burst, pop",
+              "score": 0.0038405712693929672
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.001935046399012208,
+          "singing": 0.006143549457192421,
+          "imbalance": 3.074406862258911,
+          "latencyMs": 0.6296249921433628,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8474693894386292
+            },
+            {
+              "class": "Singing",
+              "score": 0.006143549457192421
+            },
+            {
+              "class": "Independent music",
+              "score": 0.005632219836115837
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.005238133482635021
+            },
+            {
+              "class": "Skateboard",
+              "score": 0.005222865380346775
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.003415876068174839,
+          "singing": 0.00161050446331501,
+          "imbalance": 2.549271821975708,
+          "latencyMs": 0.6975840078666806,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8740793466567993
+            },
+            {
+              "class": "Speech",
+              "score": 0.003415876068174839
+            },
+            {
+              "class": "Electronic music",
+              "score": 0.0019583473913371563
+            },
+            {
+              "class": "Pop music",
+              "score": 0.0018387115560472012
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.0017430068692192435
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.002621486084535718,
+          "singing": 0.004671656526625156,
+          "imbalance": 2.762840986251831,
+          "latencyMs": 0.6698329816572368,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9085921049118042
+            },
+            {
+              "class": "Rhythm and blues",
+              "score": 0.005509927403181791
+            },
+            {
+              "class": "Hip hop music",
+              "score": 0.005070713814347982
+            },
+            {
+              "class": "Independent music",
+              "score": 0.0047146896831691265
+            },
+            {
+              "class": "Rapping",
+              "score": 0.004671656526625156
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "10.wav",
+      "checksum": "0467e5e640b2daf894d32fdcd8cd2c06cb11826217ca9527b93389410a8d1cce",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.002776284934952855,
+          "singing": 0.014355424791574478,
+          "imbalance": 3.6010992527008057,
+          "latencyMs": 0.6552090053446591,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.7877703309059143
+            },
+            {
+              "class": "Pop music",
+              "score": 0.019272392615675926
+            },
+            {
+              "class": "Song",
+              "score": 0.018229978159070015
+            },
+            {
+              "class": "Singing",
+              "score": 0.014355424791574478
+            },
+            {
+              "class": "Music of Asia",
+              "score": 0.00790957547724247
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.0012652454897761345,
+          "singing": 0.021437611430883408,
+          "imbalance": 3.4034674167633057,
+          "latencyMs": 0.6220840150490403,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9199594259262085
+            },
+            {
+              "class": "Rock and roll",
+              "score": 0.07853874564170837
+            },
+            {
+              "class": "Rock music",
+              "score": 0.03439408168196678
+            },
+            {
+              "class": "Singing",
+              "score": 0.021437611430883408
+            },
+            {
+              "class": "Roll",
+              "score": 0.018353216350078583
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.08142954111099243,
+          "singing": 0.001177433179691434,
+          "imbalance": 3.670555591583252,
+          "latencyMs": 0.6380419945344329,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.5952470302581787
+            },
+            {
+              "class": "Speech",
+              "score": 0.08142954111099243
+            },
+            {
+              "class": "Vehicle",
+              "score": 0.005981835536658764
+            },
+            {
+              "class": "Bicycle",
+              "score": 0.005359907168895006
+            },
+            {
+              "class": "Boat, Water vehicle",
+              "score": 0.003948996774852276
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.04874575138092041,
+          "singing": 0.0010353152174502611,
+          "imbalance": 3.4211652278900146,
+          "latencyMs": 0.7145419949665666,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.965530514717102
+            },
+            {
+              "class": "Speech",
+              "score": 0.04874575138092041
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.005078586284071207
+            },
+            {
+              "class": "Theme music",
+              "score": 0.0033430198673158884
+            },
+            {
+              "class": "Pop music",
+              "score": 0.0030919662676751614
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.010937756858766079,
+          "singing": 0.003672195365652442,
+          "imbalance": 3.756598949432373,
+          "latencyMs": 0.7924590026959777,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8897398710250854
+            },
+            {
+              "class": "Speech",
+              "score": 0.010937756858766079
+            },
+            {
+              "class": "Song",
+              "score": 0.00462541077286005
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.004595092032104731
+            },
+            {
+              "class": "Rhythm and blues",
+              "score": 0.003963708411902189
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.9371200203895569,
+          "singing": 0.00010628597374306992,
+          "imbalance": 3.908480644226074,
+          "latencyMs": 0.6332910270430148,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9371200203895569
+            },
+            {
+              "class": "Music",
+              "score": 0.030119549483060837
+            },
+            {
+              "class": "Inside, public space",
+              "score": 0.007241630461066961
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.0020146030001342297
+            },
+            {
+              "class": "Hubbub, speech noise, speech babble",
+              "score": 0.0007293534581549466
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "11.wav",
+      "checksum": "fc48092057450167232feac1bc2296b0f43793658f3e703e7f7cd83952882d59",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.004940985236316919,
+          "singing": 0.0036879179533571005,
+          "imbalance": 5.154560565948486,
+          "latencyMs": 0.6787079619243741,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9423022866249084
+            },
+            {
+              "class": "Pop music",
+              "score": 0.00776580348610878
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.005073996260762215
+            },
+            {
+              "class": "Speech",
+              "score": 0.004940985236316919
+            },
+            {
+              "class": "Singing",
+              "score": 0.0036879179533571005
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.018021322786808014,
+          "singing": 0.005159982945770025,
+          "imbalance": 5.7199201583862305,
+          "latencyMs": 0.687332998495549,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8459771275520325
+            },
+            {
+              "class": "Speech",
+              "score": 0.018021322786808014
+            },
+            {
+              "class": "Rapping",
+              "score": 0.005159982945770025
+            },
+            {
+              "class": "Singing",
+              "score": 0.004481790587306023
+            },
+            {
+              "class": "Hip hop music",
+              "score": 0.003558312077075243
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.2510538101196289,
+          "singing": 0.0005592169472947717,
+          "imbalance": 5.447859764099121,
+          "latencyMs": 0.8441249956376851,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.6978752613067627
+            },
+            {
+              "class": "Speech",
+              "score": 0.2510538101196289
+            },
+            {
+              "class": "Background music",
+              "score": 0.0012821590062230825
+            },
+            {
+              "class": "Spray",
+              "score": 0.0012045634211972356
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.001182028790935874
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.3202088177204132,
+          "singing": 4.664236257667653e-05,
+          "imbalance": 3.988226890563965,
+          "latencyMs": 0.7916669710539281,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.4565581977367401
+            },
+            {
+              "class": "Speech",
+              "score": 0.3202088177204132
+            },
+            {
+              "class": "Boat, Water vehicle",
+              "score": 0.0033845019061118364
+            },
+            {
+              "class": "Vehicle",
+              "score": 0.0020374127198010683
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.0018392900237813592
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.6798324584960938,
+          "singing": 0.00015761397662572563,
+          "imbalance": 5.968834400177002,
+          "latencyMs": 0.6655000033788383,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.6798324584960938
+            },
+            {
+              "class": "Music",
+              "score": 0.44445762038230896
+            },
+            {
+              "class": "Television",
+              "score": 0.0032867519184947014
+            },
+            {
+              "class": "Spray",
+              "score": 0.00314425234682858
+            },
+            {
+              "class": "Background music",
+              "score": 0.0022427579388022423
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.8748477101325989,
+          "singing": 0.00010300366557203233,
+          "imbalance": 6.2149739265441895,
+          "latencyMs": 0.8480420219711959,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.8748477101325989
+            },
+            {
+              "class": "Music",
+              "score": 0.2505282759666443
+            },
+            {
+              "class": "Inside, public space",
+              "score": 0.000850953278131783
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0004744151665363461
+            },
+            {
+              "class": "Background music",
+              "score": 0.0003605415695346892
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "12.wav",
+      "checksum": "8561b1da35253486ccf06a19e27e057ad661cc2f43a417f0715b22d08b854a20",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.10088569670915604,
+          "singing": 0.0009271287126466632,
+          "imbalance": 6.911993503570557,
+          "latencyMs": 0.7011669804342091,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8800538182258606
+            },
+            {
+              "class": "Speech",
+              "score": 0.10088569670915604
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.00322318309918046
+            },
+            {
+              "class": "Background music",
+              "score": 0.001890575047582388
+            },
+            {
+              "class": "Radio",
+              "score": 0.0015401969430968165
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.00930752418935299,
+          "singing": 0.01769334264099598,
+          "imbalance": 5.6488728523254395,
+          "latencyMs": 0.6431659567169845,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8701783418655396
+            },
+            {
+              "class": "Singing",
+              "score": 0.01769334264099598
+            },
+            {
+              "class": "Rapping",
+              "score": 0.013401656411588192
+            },
+            {
+              "class": "Hip hop music",
+              "score": 0.013118628412485123
+            },
+            {
+              "class": "Speech",
+              "score": 0.00930752418935299
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.7237598896026611,
+          "singing": 1.484037875343347e-05,
+          "imbalance": 6.795839786529541,
+          "latencyMs": 0.6243750103749335,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9556500315666199
+            },
+            {
+              "class": "Speech",
+              "score": 0.7237598896026611
+            },
+            {
+              "class": "Background music",
+              "score": 0.000980184762738645
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.0004555991617962718
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.00042747659608721733
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.0542498379945755,
+          "singing": 0.0024094402324408293,
+          "imbalance": 7.458520889282227,
+          "latencyMs": 0.6130000110715628,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.8597780466079712
+            },
+            {
+              "class": "Speech",
+              "score": 0.0542498379945755
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.003414447885006666
+            },
+            {
+              "class": "Rapping",
+              "score": 0.0024094402324408293
+            },
+            {
+              "class": "Singing",
+              "score": 0.0020325949881225824
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.5384902358055115,
+          "singing": 0.0005890321917831898,
+          "imbalance": 5.904966354370117,
+          "latencyMs": 0.6441670120693743,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.5384902358055115
+            },
+            {
+              "class": "Music",
+              "score": 0.0892525166273117
+            },
+            {
+              "class": "Inside, public space",
+              "score": 0.0013948770938441157
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.0009087923099286854
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0007802284671925008
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.3907891511917114,
+          "singing": 0.000503801682498306,
+          "imbalance": 18.914104461669922,
+          "latencyMs": 0.6338750245049596,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.69952392578125
+            },
+            {
+              "class": "Speech",
+              "score": 0.3907891511917114
+            },
+            {
+              "class": "Tender music",
+              "score": 0.0011684390483424067
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0011279000900685787
+            },
+            {
+              "class": "Television",
+              "score": 0.0011173902312293649
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "13.wav",
+      "checksum": "b99714a889e73cd91ed1f4bb04533c306067e2f5c5383461d76562f354dbfbde",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.7690240740776062,
+          "singing": 7.011893467279151e-05,
+          "imbalance": 13.213286399841309,
+          "latencyMs": 0.6375410011969507,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9120440483093262
+            },
+            {
+              "class": "Speech",
+              "score": 0.7690240740776062
+            },
+            {
+              "class": "Background music",
+              "score": 0.0006991609698161483
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.0006841619033366442
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.0003545287763699889
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.6509408950805664,
+          "singing": 0.00028076558373868465,
+          "imbalance": 7.894753456115723,
+          "latencyMs": 0.6747920415364206,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.9334383606910706
+            },
+            {
+              "class": "Speech",
+              "score": 0.6509408950805664
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.0029519503004848957
+            },
+            {
+              "class": "Background music",
+              "score": 0.0016050946433097124
+            },
+            {
+              "class": "Tender music",
+              "score": 0.0011899127857759595
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.18141624331474304,
+          "singing": 0.0002639218291733414,
+          "imbalance": 7.711867332458496,
+          "latencyMs": 0.6796660018153489,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.6950859427452087
+            },
+            {
+              "class": "Speech",
+              "score": 0.18141624331474304
+            },
+            {
+              "class": "Background music",
+              "score": 0.0029588171746581793
+            },
+            {
+              "class": "Spray",
+              "score": 0.0020521855913102627
+            },
+            {
+              "class": "Radio",
+              "score": 0.0018207586836069822
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.9261389970779419,
+          "singing": 3.8640835555270314e-05,
+          "imbalance": 13.600125312805176,
+          "latencyMs": 0.6705829873681068,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9261389970779419
+            },
+            {
+              "class": "Music",
+              "score": 0.3515996038913727
+            },
+            {
+              "class": "Background music",
+              "score": 0.0012923101894557476
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0009700817754492164
+            },
+            {
+              "class": "Spray",
+              "score": 0.0006881173467263579
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.5760008096694946,
+          "singing": 5.4162312153493986e-05,
+          "imbalance": 17.142122268676758,
+          "latencyMs": 0.6616669707000256,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.5792432427406311
+            },
+            {
+              "class": "Speech",
+              "score": 0.5760008096694946
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0014245952479541302
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0006128138629719615
+            },
+            {
+              "class": "Musical instrument",
+              "score": 0.0004283922025933862
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.7365900278091431,
+          "singing": 6.968870729906484e-05,
+          "imbalance": 17.16221809387207,
+          "latencyMs": 0.6608340190723538,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.7365900278091431
+            },
+            {
+              "class": "Music",
+              "score": 0.2858647108078003
+            },
+            {
+              "class": "Background music",
+              "score": 0.00030178052838891745
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.000284956389805302
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0001760251325322315
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "14.wav",
+      "checksum": "50370b75f52f29668ce3caec6cef3d8653fbefcdebc21f62a02cbc076dbb50e0",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.822716474533081,
+          "singing": 0.00016685934679117054,
+          "imbalance": 12.289713859558105,
+          "latencyMs": 0.7161669782362878,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.848223090171814
+            },
+            {
+              "class": "Speech",
+              "score": 0.822716474533081
+            },
+            {
+              "class": "Background music",
+              "score": 0.002205603988841176
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.0014272126136347651
+            },
+            {
+              "class": "Tender music",
+              "score": 0.0007867657695896924
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.9299838542938232,
+          "singing": 1.4072926205699332e-05,
+          "imbalance": 12.105647087097168,
+          "latencyMs": 0.7777500431984663,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9299838542938232
+            },
+            {
+              "class": "Music",
+              "score": 0.88169926404953
+            },
+            {
+              "class": "Spray",
+              "score": 0.0016685829032212496
+            },
+            {
+              "class": "Liquid",
+              "score": 0.0010495450114831328
+            },
+            {
+              "class": "Background music",
+              "score": 0.0009655861649662256
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.7198023200035095,
+          "singing": 0.00020498677622526884,
+          "imbalance": 17.441768646240234,
+          "latencyMs": 0.8810419822111726,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.7198023200035095
+            },
+            {
+              "class": "Music",
+              "score": 0.5661499500274658
+            },
+            {
+              "class": "Spray",
+              "score": 0.0022740252315998077
+            },
+            {
+              "class": "Background music",
+              "score": 0.0017913023475557566
+            },
+            {
+              "class": "Television",
+              "score": 0.001784176449291408
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.9674440622329712,
+          "singing": 0.00021138109150342643,
+          "imbalance": 12.603443145751953,
+          "latencyMs": 0.7891660206951201,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9674440622329712
+            },
+            {
+              "class": "Music",
+              "score": 0.03141184523701668
+            },
+            {
+              "class": "Inside, public space",
+              "score": 0.004208660218864679
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.001163574168458581
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0008470502216368914
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.9498071074485779,
+          "singing": 9.230470459442586e-05,
+          "imbalance": 38.847496032714844,
+          "latencyMs": 0.9119160240516067,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9498071074485779
+            },
+            {
+              "class": "Music",
+              "score": 0.25151458382606506
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0005907008890062571
+            },
+            {
+              "class": "Conversation",
+              "score": 0.0005508848698809743
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.00048250032705254853
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.7651463747024536,
+          "singing": 2.451070940878708e-05,
+          "imbalance": 22.17218780517578,
+          "latencyMs": 0.7859159959480166,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.7651463747024536
+            },
+            {
+              "class": "Music",
+              "score": 0.6572803258895874
+            },
+            {
+              "class": "Background music",
+              "score": 0.00030314933974295855
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0002963334845844656
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.00016908040561247617
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "15.wav",
+      "checksum": "6585c838343de541c3bf6c30b563ea0af044f17f908ad6867050334ebb06927b",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.9236273169517517,
+          "singing": 1.2432264156814199e-05,
+          "imbalance": 16.197864532470703,
+          "latencyMs": 0.8720000041648746,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9236273169517517
+            },
+            {
+              "class": "Music",
+              "score": 0.6065261960029602
+            },
+            {
+              "class": "Liquid",
+              "score": 0.0009686208795756102
+            },
+            {
+              "class": "Spray",
+              "score": 0.000935820396989584
+            },
+            {
+              "class": "Bicycle",
+              "score": 0.0008891771431080997
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.5368033647537231,
+          "singing": 5.965924356132746e-05,
+          "imbalance": 20.197900772094727,
+          "latencyMs": 0.7317080162465572,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.939773678779602
+            },
+            {
+              "class": "Speech",
+              "score": 0.5368033647537231
+            },
+            {
+              "class": "Spray",
+              "score": 0.0011663429904729128
+            },
+            {
+              "class": "Background music",
+              "score": 0.0010990063892677426
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.0006293782498687506
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.9829987287521362,
+          "singing": 2.975418283313047e-05,
+          "imbalance": 25.10614585876465,
+          "latencyMs": 0.7097499910742044,
+          "candidate": true,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9829987287521362
+            },
+            {
+              "class": "Music",
+              "score": 0.32404235005378723
+            },
+            {
+              "class": "Inside, public space",
+              "score": 0.0004071657604072243
+            },
+            {
+              "class": "Conversation",
+              "score": 0.00031676984508521855
+            },
+            {
+              "class": "Background music",
+              "score": 0.0003121423360425979
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.9682790040969849,
+          "singing": 6.503969416371547e-06,
+          "imbalance": 49.83430862426758,
+          "latencyMs": 0.675833027344197,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9682790040969849
+            },
+            {
+              "class": "Music",
+              "score": 0.22879496216773987
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0012891318183392286
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0007205443689599633
+            },
+            {
+              "class": "Conversation",
+              "score": 0.0005162986926734447
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.9178217649459839,
+          "singing": 0.00019963450904469937,
+          "imbalance": 31.874210357666016,
+          "latencyMs": 0.6332919583655894,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9178217649459839
+            },
+            {
+              "class": "Music",
+              "score": 0.284419447183609
+            },
+            {
+              "class": "Child speech, kid speaking",
+              "score": 0.00385308638215065
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0013720419956371188
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.0013579210499301553
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.9097411036491394,
+          "singing": 0.00011082750279456377,
+          "imbalance": 33.164058685302734,
+          "latencyMs": 0.6847089971415699,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9097411036491394
+            },
+            {
+              "class": "Music",
+              "score": 0.23219017684459686
+            },
+            {
+              "class": "Background music",
+              "score": 0.0011465329444035888
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.0009468897478654981
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0007514241151511669
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "16.wav",
+      "checksum": "97bdc2402a419ba7a9904696dfc06d8a1385df9a5d5baa98c31157bea3d7d7b8",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.9505792260169983,
+          "singing": 5.680430604115827e-06,
+          "imbalance": 25.372406005859375,
+          "latencyMs": 0.7240410195663571,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.965608537197113
+            },
+            {
+              "class": "Speech",
+              "score": 0.9505792260169983
+            },
+            {
+              "class": "Spray",
+              "score": 0.0007618610979989171
+            },
+            {
+              "class": "Background music",
+              "score": 0.0006591883138753474
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0005159525899216533
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.730483889579773,
+          "singing": 0.00016688447794876993,
+          "imbalance": 40.86650848388672,
+          "latencyMs": 0.6899589789099991,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.730483889579773
+            },
+            {
+              "class": "Music",
+              "score": 0.17162178456783295
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0012045102193951607
+            },
+            {
+              "class": "Background music",
+              "score": 0.0008979149861261249
+            },
+            {
+              "class": "Exciting music",
+              "score": 0.0007923801895231009
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.9410731196403503,
+          "singing": 0.00020413033780641854,
+          "imbalance": 36.571475982666016,
+          "latencyMs": 0.6773329805582762,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9410731196403503
+            },
+            {
+              "class": "Music",
+              "score": 0.07600273191928864
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.011767107993364334
+            },
+            {
+              "class": "Inside, public space",
+              "score": 0.003783933352679014
+            },
+            {
+              "class": "Motor vehicle (road)",
+              "score": 0.0022596477065235376
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.9798066020011902,
+          "singing": 3.868249768856913e-05,
+          "imbalance": 64.51545715332031,
+          "latencyMs": 0.6824170122854412,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9798066020011902
+            },
+            {
+              "class": "Music",
+              "score": 0.018985392525792122
+            },
+            {
+              "class": "Conversation",
+              "score": 0.005838452372699976
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0027000370901077986
+            },
+            {
+              "class": "Child speech, kid speaking",
+              "score": 0.0017761175986379385
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.9630200266838074,
+          "singing": 3.878300776705146e-05,
+          "imbalance": 54.529296875,
+          "latencyMs": 0.6500830058939755,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9630200266838074
+            },
+            {
+              "class": "Music",
+              "score": 0.05346725508570671
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.002964765066280961
+            },
+            {
+              "class": "Conversation",
+              "score": 0.0011133728548884392
+            },
+            {
+              "class": "Inside, public space",
+              "score": 0.001093698083423078
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.7765422463417053,
+          "singing": 0.00023164178128354251,
+          "imbalance": 33.530975341796875,
+          "latencyMs": 0.7138749933801591,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.7765422463417053
+            },
+            {
+              "class": "Music",
+              "score": 0.45743462443351746
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0010321550071239471
+            },
+            {
+              "class": "Country",
+              "score": 0.0009587447857484221
+            },
+            {
+              "class": "Tender music",
+              "score": 0.0007572912145406008
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "17.wav",
+      "checksum": "1bf1137b4d2ec20244dac5c4e78c5c4ed8e0a6021395bb94ea7f2d9925841193",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.8586034178733826,
+          "singing": 4.059043567394838e-05,
+          "imbalance": 56.260684967041016,
+          "latencyMs": 0.6517090369015932,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.8586034178733826
+            },
+            {
+              "class": "Music",
+              "score": 0.6164988875389099
+            },
+            {
+              "class": "Spray",
+              "score": 0.0014252825640141964
+            },
+            {
+              "class": "Liquid",
+              "score": 0.001005314290523529
+            },
+            {
+              "class": "Background music",
+              "score": 0.0008183398167602718
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.9651591777801514,
+          "singing": 1.90266509889625e-05,
+          "imbalance": 52.088653564453125,
+          "latencyMs": 0.634457974229008,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9651591777801514
+            },
+            {
+              "class": "Music",
+              "score": 0.41519036889076233
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.001156015321612358
+            },
+            {
+              "class": "Background music",
+              "score": 0.0005911103216931224
+            },
+            {
+              "class": "Conversation",
+              "score": 0.00032755741267465055
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.9870880842208862,
+          "singing": 3.7294694266165607e-06,
+          "imbalance": 118.5216064453125,
+          "latencyMs": 0.6262080278247595,
+          "candidate": true,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9870880842208862
+            },
+            {
+              "class": "Music",
+              "score": 0.3479328155517578
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0003658269124571234
+            },
+            {
+              "class": "Conversation",
+              "score": 0.0003134520957246423
+            },
+            {
+              "class": "Background music",
+              "score": 0.0001889676641440019
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.165807843208313,
+          "singing": 0.001241870690137148,
+          "imbalance": 71.9756851196289,
+          "latencyMs": 0.618582998868078,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.2929602265357971
+            },
+            {
+              "class": "Speech",
+              "score": 0.165807843208313
+            },
+            {
+              "class": "Singing",
+              "score": 0.001241870690137148
+            },
+            {
+              "class": "Child speech, kid speaking",
+              "score": 0.0011226909700781107
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0008747323299758136
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.9432010650634766,
+          "singing": 7.08340885466896e-05,
+          "imbalance": 59.146915435791016,
+          "latencyMs": 0.6275410414673388,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9432010650634766
+            },
+            {
+              "class": "Music",
+              "score": 0.14464658498764038
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0010279901325702667
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.00016783492173999548
+            },
+            {
+              "class": "Conversation",
+              "score": 0.0001586230646353215
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.9616299271583557,
+          "singing": 3.2039108191384e-05,
+          "imbalance": 68.1707534790039,
+          "latencyMs": 0.7397079607471824,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9616299271583557
+            },
+            {
+              "class": "Music",
+              "score": 0.3094070851802826
+            },
+            {
+              "class": "Conversation",
+              "score": 0.0012122159823775291
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0011107784230262041
+            },
+            {
+              "class": "Spray",
+              "score": 0.0007323006866499782
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "18.wav",
+      "checksum": "1810655acd91754e265607fd8ac7db43f2022e68f4fdd3c407c1efa6a23924ea",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.9714662432670593,
+          "singing": 2.651855356816668e-05,
+          "imbalance": 98.15255737304688,
+          "latencyMs": 0.7457499741576612,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9714662432670593
+            },
+            {
+              "class": "Music",
+              "score": 0.012090482749044895
+            },
+            {
+              "class": "Conversation",
+              "score": 0.002328577684238553
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0012230968568474054
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0005961506976746023
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.9777889251708984,
+          "singing": 1.826408515626099e-05,
+          "imbalance": 99.0552978515625,
+          "latencyMs": 0.7170420140028,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9777889251708984
+            },
+            {
+              "class": "Music",
+              "score": 0.021319011226296425
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0006460847798734903
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0005143056623637676
+            },
+            {
+              "class": "Conversation",
+              "score": 0.00045550017966888845
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.9553877115249634,
+          "singing": 4.5884124119766057e-05,
+          "imbalance": 111.01049041748047,
+          "latencyMs": 0.6235829787328839,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9553877115249634
+            },
+            {
+              "class": "Music",
+              "score": 0.13044993579387665
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0006989157991483808
+            },
+            {
+              "class": "Conversation",
+              "score": 0.0005051917396485806
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0004277592815924436
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.9879891276359558,
+          "singing": 9.007816515804734e-06,
+          "imbalance": 132.59808349609375,
+          "latencyMs": 0.6206249818205833,
+          "candidate": true,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9879891276359558
+            },
+            {
+              "class": "Music",
+              "score": 0.01622634567320347
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0017396134790033102
+            },
+            {
+              "class": "Conversation",
+              "score": 0.0010427531087771058
+            },
+            {
+              "class": "Spray",
+              "score": 0.0003158847102895379
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.4275343716144562,
+          "singing": 0.0002480798866599798,
+          "imbalance": 57.22439193725586,
+          "latencyMs": 0.6598749896511436,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Music",
+              "score": 0.45718640089035034
+            },
+            {
+              "class": "Speech",
+              "score": 0.4275343716144562
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0012910733930766582
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0012286712881177664
+            },
+            {
+              "class": "Tender music",
+              "score": 0.0010175998322665691
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.9872500896453857,
+          "singing": 5.3273146477295086e-05,
+          "imbalance": 104.46187591552734,
+          "latencyMs": 0.6251250160858035,
+          "candidate": true,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9872500896453857
+            },
+            {
+              "class": "Conversation",
+              "score": 0.013028533197939396
+            },
+            {
+              "class": "Music",
+              "score": 0.004293543752282858
+            },
+            {
+              "class": "Inside, large room or hall",
+              "score": 0.0013068502303212881
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0011029073502868414
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sample": "19.wav",
+      "checksum": "915cfac853ee846904f3c41a1c5bccec44c6fd3e31e7c16e4f4448010fa8f97d",
+      "windows": [
+        {
+          "offsetMs": 0,
+          "speech": 0.9675829410552979,
+          "singing": 1.2778686141245998e-05,
+          "imbalance": 125.66653442382812,
+          "latencyMs": 0.6382080027833581,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9675829410552979
+            },
+            {
+              "class": "Music",
+              "score": 0.0964726060628891
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0007700487622059882
+            },
+            {
+              "class": "Conversation",
+              "score": 0.00035943021066486835
+            },
+            {
+              "class": "Background music",
+              "score": 0.00026171005447395146
+            }
+          ]
+        },
+        {
+          "offsetMs": 975,
+          "speech": 0.9883444309234619,
+          "singing": 1.349390822724672e-05,
+          "imbalance": 203.6856231689453,
+          "latencyMs": 0.6235000328160822,
+          "candidate": true,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9883444309234619
+            },
+            {
+              "class": "Music",
+              "score": 0.04258989915251732
+            },
+            {
+              "class": "Conversation",
+              "score": 0.0007394116255454719
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0005159680731594563
+            },
+            {
+              "class": "Outside, urban or manmade",
+              "score": 0.0004703876911662519
+            }
+          ]
+        },
+        {
+          "offsetMs": 1950,
+          "speech": 0.539871335029602,
+          "singing": 0.00020795447926502675,
+          "imbalance": 149.921630859375,
+          "latencyMs": 0.630167021881789,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.539871335029602
+            },
+            {
+              "class": "Music",
+              "score": 0.32425549626350403
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.002675694413483143
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0012491478119045496
+            },
+            {
+              "class": "Inside, large room or hall",
+              "score": 0.000356563541572541
+            }
+          ]
+        },
+        {
+          "offsetMs": 2925,
+          "speech": 0.9839253425598145,
+          "singing": 6.286388725129655e-06,
+          "imbalance": 129.29397583007812,
+          "latencyMs": 0.6491250242106616,
+          "candidate": true,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9839253425598145
+            },
+            {
+              "class": "Music",
+              "score": 0.2866319417953491
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.00198857462964952
+            },
+            {
+              "class": "Background music",
+              "score": 0.0005765836103819311
+            },
+            {
+              "class": "Conversation",
+              "score": 0.00026177792460657656
+            }
+          ]
+        },
+        {
+          "offsetMs": 3900,
+          "speech": 0.9908990263938904,
+          "singing": 6.5106469264719635e-06,
+          "imbalance": 160.51405334472656,
+          "latencyMs": 0.7881249766796827,
+          "candidate": true,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.9908990263938904
+            },
+            {
+              "class": "Music",
+              "score": 0.36587971448898315
+            },
+            {
+              "class": "Conversation",
+              "score": 0.0009023263119161129
+            },
+            {
+              "class": "Background music",
+              "score": 0.00040400310535915196
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.00038070930168032646
+            }
+          ]
+        },
+        {
+          "offsetMs": 4875,
+          "speech": 0.8915016055107117,
+          "singing": 7.939292845549062e-05,
+          "imbalance": 130.15841674804688,
+          "latencyMs": 0.8426250424236059,
+          "candidate": false,
+          "top": [
+            {
+              "class": "Speech",
+              "score": 0.8915016055107117
+            },
+            {
+              "class": "Music",
+              "score": 0.10056576132774353
+            },
+            {
+              "class": "Narration, monologue",
+              "score": 0.0011072988854721189
+            },
+            {
+              "class": "Child speech, kid speaking",
+              "score": 0.0007245063898153603
+            },
+            {
+              "class": "Inside, small room",
+              "score": 0.0006052954704500735
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

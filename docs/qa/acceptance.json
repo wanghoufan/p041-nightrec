@@ -1,0 +1,310 @@
+[
+  {
+    "id": "AC-001",
+    "story": "User Story 1 - 首次进入并一键开始今晚（P1）",
+    "behavior": "首次启动展示品牌启动体验后进入权限/隐私引导，不重复出现双 Splash。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-002",
+    "story": "User Story 1 - 首次进入并一键开始今晚（P1）",
+    "behavior": "用户未授予麦克风权限时不能开始录音，并给出明确修复入口。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-003",
+    "story": "User Story 1 - 首次进入并一键开始今晚（P1）",
+    "behavior": "首页核心动作只有一个高优先级“开始今晚”；最近 Session 可直接进入。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-004",
+    "story": "User Story 1 - 首次进入并一键开始今晚（P1）",
+    "behavior": "开始前名称/地点/AI 净化等属于可选设置，不应强迫填写。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-005",
+    "story": "User Story 2 - 锁屏/用手机时仍连续记录（P1）",
+    "behavior": "进入 `RECORDING` 后显示计时、当前稳定歌曲、已识别数量和显著 REC 状态。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-006",
+    "story": "User Story 2 - 锁屏/用手机时仍连续记录（P1）",
+    "behavior": "锁屏/切其他普通 App 不进入 `AWAY`。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-007",
+    "story": "User Story 2 - 锁屏/用手机时仍连续记录（P1）",
+    "behavior": "后台存在系统可见的持续录音通知。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-008",
+    "story": "User Story 2 - 锁屏/用手机时仍连续记录（P1）",
+    "behavior": "识曲断网不停止 Original。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-009",
+    "story": "User Story 2 - 锁屏/用手机时仍连续记录（P1）",
+    "behavior": "底层安全分片无用户感知，用户始终看到一条 Session。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-010",
+    "story": "User Story 3 - 暂离后继续同一个晚上（P1）",
+    "behavior": "`RECORDING -> AWAY` 时安全封口当前分片并停止麦克风与实时识曲。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-011",
+    "story": "User Story 3 - 暂离后继续同一个晚上（P1）",
+    "behavior": "`AWAY -> RECORDING` 时 Session ID 不变。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-012",
+    "story": "User Story 3 - 暂离后继续同一个晚上（P1）",
+    "behavior": "时间轴显示真实暂离开始/结束/时长。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-013",
+    "story": "User Story 3 - 暂离后继续同一个晚上（P1）",
+    "behavior": "回放默认跳过 Gap，不播放半小时静音。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-014",
+    "story": "User Story 3 - 暂离后继续同一个晚上（P1）",
+    "behavior": "普通切 App 不得生成 Gap。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-015",
+    "story": "User Story 4 - 连续识曲与稳定歌曲时间轴（P1）",
+    "behavior": "同一稳定区间重复识别只形成一个主要 TrackOccurrence。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-016",
+    "story": "User Story 4 - 连续识曲与稳定歌曲时间轴（P1）",
+    "behavior": "新歌需满足稳定确认规则才切换。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-017",
+    "story": "User Story 4 - 连续识曲与稳定歌曲时间轴（P1）",
+    "behavior": "迟到结果按音频时间戳落到正确位置。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-018",
+    "story": "User Story 4 - 连续识曲与稳定歌曲时间轴（P1）",
+    "behavior": "网络恢复/Session 结束后可补识别。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-019",
+    "story": "User Story 4 - 连续识曲与稳定歌曲时间轴（P1）",
+    "behavior": "未识别区间保留并可手动“重新识别这一段”。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-020",
+    "story": "User Story 5 - 结束今晚并无缝回听现场（P1）",
+    "behavior": "只有用户确认“结束今晚”才结束 Session。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-021",
+    "story": "User Story 5 - 结束今晚并无缝回听现场（P1）",
+    "behavior": "多物理分片在 UI 中只有一条整晚进度条。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-022",
+    "story": "User Story 5 - 结束今晚并无缝回听现场（P1）",
+    "behavior": "逻辑 seek 能准确映射到现场音频。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-023",
+    "story": "User Story 5 - 结束今晚并无缝回听现场（P1）",
+    "behavior": "点击歌曲 Marker 跳到昨晚现场，而不是外部平台原曲。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-024",
+    "story": "User Story 5 - 结束今晚并无缝回听现场（P1）",
+    "behavior": "Gap 默认跳过，Gap 前后无业务层插入静音。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-025",
+    "story": "User Story 5 - 结束今晚并无缝回听现场（P1）",
+    "behavior": "Original 在 PROCESSING 阶段也能播放。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-026",
+    "story": "User Story 6 - AI 净化附近讲话但保留歌曲主唱（P2）",
+    "behavior": "Original 永不修改。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-027",
+    "story": "User Story 6 - AI 净化附近讲话但保留歌曲主唱（P2）",
+    "behavior": "Clean 独立生成，失败自动回退 Original。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-028",
+    "story": "User Story 6 - AI 净化附近讲话但保留歌曲主唱（P2）",
+    "behavior": "低置信区间不强行处理。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-029",
+    "story": "User Story 6 - AI 净化附近讲话但保留歌曲主唱（P2）",
+    "behavior": "Original/Clean 切换保持同一逻辑位置。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-030",
+    "story": "User Story 6 - AI 净化附近讲话但保留歌曲主唱（P2）",
+    "behavior": "UI 能看到 Clean 状态与处理区间。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-031",
+    "story": "User Story 7 - 电话/抢麦/崩溃/低存储仍尽量保住整晚（P1）",
+    "behavior": "麦克风失去进入 `INTERRUPTED`，不误结束。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-032",
+    "story": "User Story 7 - 电话/抢麦/崩溃/低存储仍尽量保住整晚（P1）",
+    "behavior": "可自动恢复时经 `RECOVERING` 回到 `RECORDING` 并记录 Gap。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-033",
+    "story": "User Story 7 - 电话/抢麦/崩溃/低存储仍尽量保住整晚（P1）",
+    "behavior": "不能自动恢复时通知用户恢复同一 Session。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-034",
+    "story": "User Story 7 - 电话/抢麦/崩溃/低存储仍尽量保住整晚（P1）",
+    "behavior": "进程重启后恢复已封口 Original 与 Session 元数据。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-035",
+    "story": "User Story 7 - 电话/抢麦/崩溃/低存储仍尽量保住整晚（P1）",
+    "behavior": "存储风险优先暂停 Clean/Backfill，必要时安全停止新采集并保留已有 Original。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-036",
+    "story": "User Story 8 - 第二天查找、纠错、收藏与学习（P3）",
+    "behavior": "历史按日期显示 Session、时长、歌曲数、处理状态。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-037",
+    "story": "User Story 8 - 第二天查找、纠错、收藏与学习（P3）",
+    "behavior": "错误 Marker 可重新识别、合并上一首、删除。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-038",
+    "story": "User Story 8 - 第二天查找、纠错、收藏与学习（P3）",
+    "behavior": "可收藏歌曲出现位置和转场区间并跳回现场。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-039",
+    "story": "User Story 8 - 第二天查找、纠错、收藏与学习（P3）",
+    "behavior": "歌曲详情可提供外部音乐服务入口，但不得改变 NightRec 播放源。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-040",
+    "story": "User Story 9 - 一致的浅色/深色品牌体验（P1）",
+    "behavior": "产品名始终为 NightRec；不出现 NightSet。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-041",
+    "story": "User Story 9 - 一致的浅色/深色品牌体验（P1）",
+    "behavior": "Light/Dark 只改变主题，不改变信息架构和交互位置。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-042",
+    "story": "User Story 9 - 一致的浅色/深色品牌体验（P1）",
+    "behavior": "Android launcher icon 与启动画面使用包内规范资产。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-043",
+    "story": "User Story 9 - 一致的浅色/深色品牌体验（P1）",
+    "behavior": "Recording/Away/Interrupted/Processing/Ready 各状态有明显且不混淆的视觉表达。",
+    "status": "OPEN",
+    "evidence": []
+  },
+  {
+    "id": "AC-044",
+    "story": "User Story 9 - 一致的浅色/深色品牌体验（P1）",
+    "behavior": "原型中的 15 个核心页面/状态都能映射到真实实现页面或状态。",
+    "status": "OPEN",
+    "evidence": []
+  }
+]

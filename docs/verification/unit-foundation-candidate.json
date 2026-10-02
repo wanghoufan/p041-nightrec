@@ -1,0 +1,16 @@
+[
+  {
+    "suite": "com.nightrec.app.DomainTest",
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "timestamp": "2026-10-02T08:20:37.191Z"
+  },
+  {
+    "suite": "com.nightrec.app.ReliabilityTest",
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "timestamp": "2026-10-02T08:20:37.215Z"
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "sample": 0,
+    "maxSpeech": 0.0016280729323625565,
+    "maxSinging": 0.03177420794963837,
+    "eligibleWindows": 0,
+    "inputChecksum": "c4a08e3db4cc685b8d3e1b73669f1506315c0b8cb3eab3b00b92ea01fcc0a5a7"
+  },
+  {
+    "sample": 1,
+    "maxSpeech": 0.0021232026629149914,
+    "maxSinging": 0.02370106428861618,
+    "eligibleWindows": 0,
+    "inputChecksum": "528cc9cf8230ec5d59dc1ffa0c9e65546522b890f98eeeee457dcb71e2769937"
+  },
+  {
+    "sample": 2,
+    "maxSpeech": 0.0012851572828367352,
+    "maxSinging": 0.026988781988620758,
+    "eligibleWindows": 0,
+    "inputChecksum": "88a63a9c13cd055cae8803cf3397fc539867ca893af8e42b38cad3699bced3cb"
+  },
+  {
+    "sample": 3,
+    "maxSpeech": 0.0018596185836941004,
+    "maxSinging": 0.028038207441568375,
+    "eligibleWindows": 0,
+    "inputChecksum": "183fe06d8a718c7dd4d3533060b9316474a8af35df6c6d60e08c3cf2c6153301"
+  },
+  {
+    "sample": 4,
+    "maxSpeech": 0.0013493782607838511,
+    "maxSinging": 0.06738406419754028,
+    "eligibleWindows": 0,
+    "inputChecksum": "8267a07a4225f51ec5c096a0bb190757c31184bfededb2845efab579d17ee57b"
+  },
+  {
+    "sample": 5,
+    "maxSpeech": 0.00474307918921113,
+    "maxSinging": 0.038077618926763535,
+    "eligibleWindows": 0,
+    "inputChecksum": "f97b5051fbbd76fef86a1be0172e238138c42aa367d7a9ca9210474975d1cd0d"
+  },
+  {
+    "sample": 6,
+    "maxSpeech": 0.005370151251554489,
+    "maxSinging": 0.06672347337007523,
+    "eligibleWindows": 0,
+    "inputChecksum": "7b79eba3e791ea08a192a681e0fc0171c8e442e3b44e662b6799e5ba6d2465df"
+  },
+  {
+    "sample": 7,
+    "maxSpeech": 0.003938750829547644,
+    "maxSinging": 0.05072567239403725,
+    "eligibleWindows": 0,
+    "inputChecksum": "ca7ac2602acbba1068ecbeea4c59be989bfe7b9c76fa85a78b5cf5591a132816"
+  },
+  {
+    "sample": 8,
+    "maxSpeech": 0.12338492274284363,
+    "maxSinging": 0.04168682545423508,
+    "eligibleWindows": 0,
+    "inputChecksum": "d8587270023d08212e88efa7e2a7a3776e280a2002538708014474e6776c0d9e"
+  },
+  {
+    "sample": 9,
+    "maxSpeech": 0.035989969968795776,
+    "maxSinging": 0.010957225225865841,
+    "eligibleWindows": 0,
+    "inputChecksum": "0d298afd37e44fb15f85d178da0b5a54e2b83d07f2514bcbdd9867d46d1490f7"
+  },
+  {
+    "sample": 10,
+    "maxSpeech": 0.9371199607849121,
+    "maxSinging": 0.021437622606754303,
+    "eligibleWindows": 0,
+    "inputChecksum": "0467e5e640b2daf894d32fdcd8cd2c06cb11826217ca9527b93389410a8d1cce"
+  },
+  {
+    "sample": 11,
+    "maxSpeech": 0.8748477101325989,
+    "maxSinging": 0.0051599713042378426,
+    "eligibleWindows": 0,
+    "inputChecksum": "fc48092057450167232feac1bc2296b0f43793658f3e703e7f7cd83952882d59"
+  },
+  {
+    "sample": 12,
+    "maxSpeech": 0.7237591743469238,
+    "maxSinging": 0.017693325877189636,
+    "eligibleWindows": 0,
+    "inputChecksum": "8561b1da35253486ccf06a19e27e057ad661cc2f43a417f0715b22d08b854a20"
+  },
+  {
+    "sample": 13,
+    "maxSpeech": 0.9261390566825867,
+    "maxSinging": 2.8076639864593744E-4,
+    "eligibleWindows": 0,
+    "inputChecksum": "b99714a889e73cd91ed1f4bb04533c306067e2f5c5383461d76562f354dbfbde"
+  },
+  {
+    "sample": 14,
+    "maxSpeech": 0.9674440622329712,
+    "maxSinging": 2.1138129523023963E-4,
+    "eligibleWindows": 0,
+    "inputChecksum": "50370b75f52f29668ce3caec6cef3d8653fbefcdebc21f62a02cbc076dbb50e0"
+  },
+  {
+    "sample": 15,
+    "maxSpeech": 0.9829986095428467,
+    "maxSinging": 1.996343198698014E-4,
+    "eligibleWindows": 1,
+    "inputChecksum": "6585c838343de541c3bf6c30b563ea0af044f17f908ad6867050334ebb06927b"
+  },
+  {
+    "sample": 16,
+    "maxSpeech": 0.9798066020011902,
+    "maxSinging": 2.3164045705925673E-4,
+    "eligibleWindows": 0,
+    "inputChecksum": "97bdc2402a419ba7a9904696dfc06d8a1385df9a5d5baa98c31157bea3d7d7b8"
+  },
+  {
+    "sample": 17,
+    "maxSpeech": 0.9870880842208862,
+    "maxSinging": 0.0012418689439073205,
+    "eligibleWindows": 1,
+    "inputChecksum": "1bf1137b4d2ec20244dac5c4e78c5c4ed8e0a6021395bb94ea7f2d9925841193"
+  },
+  {
+    "sample": 18,
+    "maxSpeech": 0.987989068031311,
+    "maxSinging": 2.480794209986925E-4,
+    "eligibleWindows": 2,
+    "inputChecksum": "1810655acd91754e265607fd8ac7db43f2022e68f4fdd3c407c1efa6a23924ea"
+  },
+  {
+    "sample": 19,
+    "maxSpeech": 0.9908990859985352,
+    "maxSinging": 2.0795427553821355E-4,
+    "eligibleWindows": 3,
+    "inputChecksum": "915cfac853ee846904f3c41a1c5bccec44c6fd3e31e7c16e4f4448010fa8f97d"
+  }
+]

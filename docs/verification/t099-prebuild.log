@@ -1,0 +1,83 @@
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:processDebugNavigationResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:javaPreCompileDebug
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:compileDebugNavigationResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:mergeDebugResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:extractProguardFiles
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:processDebugManifestForPackage
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugNativeLibs
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libtensorflowlite_jni.so. Run with --info option to learn more.
+
+> Task :app:processDebugResources
+> Task :app:kspDebugKotlin
+> Task :app:mergeExtDexDebug
+
+> Task :app:compileDebugKotlin
+w: file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/src/debug/java/com/nightrec/app/probe/ProbeService.kt:53:47 Unnecessary non-null assertion (!!) on a non-null receiver of type 'ProbeEncoder'.
+w: file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/src/debug/java/com/nightrec/app/probe/ProbeService.kt:56:21 Unnecessary safe call on a non-null receiver of type 'ProbeEncoder'.
+
+> Task :app:compileDebugJavaWithJavac
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:generateDebugLintReportModel
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:kspDebugUnitTestKotlin UP-TO-DATE
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:processDebugJavaRes
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:packageDebug
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:testDebugUnitTest
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/build/reports/lint-results-debug.sarif
+
+> Task :app:lintDebug
+
+[Incubating] Problems report is available at: file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 24s
+56 actionable tasks: 55 executed, 1 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.0/userguide/configuration_cache_enabling.html
+EXIT=0
+ef6899ce4a0e1c2ab75a7e429e4a649b528949008e4bd04a623904af0d59a05b  app/build/outputs/apk/debug/app-debug.apk

@@ -43,3 +43,16 @@ secrets.*
 # 系统文件
 .DS_Store
 Thumbs.db
+
+# NightRec local Android configuration and private SDK
+local.properties
+*.aar
+*.p8
+temp/
+
+# Personal local QA audio fixtures; never distribute preview/music recordings
+app/src/debug/assets/*.mp3
+app/src/androidTest/assets/cleanup-ab/
+
+# 验证证据：docs/verification 下被文档引用的日志必须随仓交接（覆盖上面的 *.log）
+!docs/verification/*.log

@@ -1,0 +1,2 @@
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+{"modelSHA256": "e193da5676a2fdb7a3702c10fba62aa27d76f64e4534467443811c1a2ff1667d", "sampleCount": 20, "candidateWindows": 7, "kind": "controlled mixtures; not real-club quality acceptance"}

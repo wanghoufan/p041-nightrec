@@ -1,0 +1,71 @@
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:processDebugNavigationResources
+> Task :app:javaPreCompileDebug
+> Task :app:mapDebugSourceSetPaths
+> Task :app:parseDebugLocalResources
+> Task :app:compileDebugNavigationResources
+> Task :app:checkDebugAarMetadata
+> Task :app:generateDebugRFile
+> Task :app:mergeDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugResources
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin
+w: file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/src/debug/java/com/nightrec/app/probe/ProbeService.kt:48:47 Unnecessary non-null assertion (!!) on a non-null receiver of type 'ProbeEncoder'.
+w: file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/src/debug/java/com/nightrec/app/probe/ProbeService.kt:51:21 Unnecessary safe call on a non-null receiver of type 'ProbeEncoder'.
+
+> Task :app:compileDebugJavaWithJavac
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:processDebugJavaRes
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:kspDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes
+
+> Task :app:testDebugUnitTest
+
+ReliabilityTest > wallClockJumpDoesNotChangeLogicalDuration FAILED
+    java.lang.IllegalStateException at ReliabilityTest.kt:10
+
+ReliabilityTest > sealedOriginalHasSameChecksumAfterDerivedWrite FAILED
+    java.lang.IllegalStateException at ReliabilityTest.kt:9
+
+ReliabilityTest > gapResetsWindowAndKeepsLogicalStart FAILED
+    java.lang.IllegalStateException at ReliabilityTest.kt:8
+
+ReliabilityTest > budgetPersistsAndStopsAllConsumers FAILED
+    java.lang.IllegalStateException at ReliabilityTest.kt:6
+
+ReliabilityTest > concurrentReservationsCannotExceedLimit FAILED
+    java.lang.AssertionError at ReliabilityTest.kt:7
+
+14 tests completed, 5 failed
+
+> Task :app:testDebugUnitTest FAILED
+
+[Incubating] Problems report is available at: file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:testDebugUnitTest'.
+> There were failing tests. See the report at: file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/build/reports/tests/testDebugUnitTest/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 12s
+29 actionable tasks: 29 executed

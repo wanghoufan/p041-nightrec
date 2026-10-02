@@ -1,0 +1,33 @@
+{"sampleRate":48000,"channels":2,"event":"START","wall":1790932572753,"frames":0}
+{"event":"HEARTBEAT","wall":1790932582956,"frames":480256}
+{"event":"HEARTBEAT","wall":1790932592958,"frames":960512}
+{"event":"HEARTBEAT","wall":1790932602962,"frames":1440768}
+{"http":200,"logicalMs":18005,"status":"success","title":"Warriors","artist":"Imagine Dragons","event":"RECOGNITION","wall":1790932605722,"frames":1573888}
+{"event":"HEARTBEAT","wall":1790932612920,"frames":1920000}
+{"event":"HEARTBEAT","wall":1790932622961,"frames":2400256}
+{"event":"HEARTBEAT","wall":1790932632959,"frames":2880512}
+{"http":200,"logicalMs":48000,"status":"success","title":"Warriors","artist":"Imagine Dragons","event":"RECOGNITION","wall":1790932635237,"frames":2990080}
+{"event":"HEARTBEAT","wall":1790932642959,"frames":3360768}
+{"event":"HEARTBEAT","wall":1790932652924,"frames":3840000}
+{"event":"HEARTBEAT","wall":1790932662963,"frames":4320256}
+{"http":200,"logicalMs":78016,"status":"success","title":"Warriors","artist":"Imagine Dragons","event":"RECOGNITION","wall":1790932665297,"frames":4432896}
+{"event":"HEARTBEAT","wall":1790932672957,"frames":4800512}
+{"event":"HEARTBEAT","wall":1790932682959,"frames":5280768}
+{"foreground":false,"event":"VISIBILITY","wall":1790932687810,"frames":5514240}
+{"foreground":true,"event":"VISIBILITY","wall":1790932691701,"frames":5692416}
+{"event":"HEARTBEAT","wall":1790932692917,"frames":5760000}
+{"http":200,"logicalMs":108010,"status":"success","title":"Warriors","artist":"Imagine Dragons","event":"RECOGNITION","wall":1790932694756,"frames":5848064}
+{"event":"HEARTBEAT","wall":1790932702937,"frames":6240256}
+{"event":"HEARTBEAT","wall":1790932713150,"frames":6720512}
+{"event":"HEARTBEAT","wall":1790932723175,"frames":7200768}
+{"http":200,"logicalMs":138005,"status":"success","title":"Warriors","artist":"Imagine Dragons","event":"RECOGNITION","wall":1790932725303,"frames":7303168}
+{"event":"HEARTBEAT","wall":1790932733131,"frames":7680000}
+{"event":"HEARTBEAT","wall":1790932743174,"frames":8160256}
+{"event":"HEARTBEAT","wall":1790932753381,"frames":8640512}
+{"http":200,"logicalMs":168000,"status":"success","title":"Warriors","artist":"Imagine Dragons","event":"RECOGNITION","wall":1790932755508,"frames":8741888}
+{"event":"HEARTBEAT","wall":1790932763379,"frames":9120768}
+{"event":"HEARTBEAT","wall":1790932773359,"frames":9600000}
+{"event":"HEARTBEAT","wall":1790932783381,"frames":10080256}
+{"http":200,"logicalMs":198016,"status":"success","title":"Warriors","artist":"Imagine Dragons","event":"RECOGNITION","wall":1790932785646,"frames":10188800}
+{"event":"HEARTBEAT","wall":1790932793378,"frames":10560512}
+{"segments":1,"event":"STOP","wall":1790932803513,"frames":11039744}
