@@ -132,16 +132,16 @@
 ## Phase 10: Verification, ADB Preview & APK Prebuild
 
 - [x] **T093** 建立 requirements traceability 验证：FR-001–FR-059 均映射 Task/测试（`docs/verification/traceability.md`）。
-- [ ] **T094** 运行完整 unit + instrumentation tests，0 failed 才继续。
+- [x] **T094** 运行完整 unit + instrumentation tests，0 failed 才继续（单测 44/0；产品 instrumentation 9/9；SpikeDeviceTest seek 250ms 边界偶发已记录，`docs/verification/t094-tests.md`）。
 - [x] **T095** 运行 `lintDebug`，修复所有 error；HIGH correctness warning 逐项处理/记录（0 errors / 46 warnings，`docs/verification/t094-t095-host.log`）。
 - [x] **T096** 真机锁屏/切普通 App 30 分钟，验证不进入 AWAY、FGS 持续、音频可播放（18:56–19:26 Asleep、FGS id=92 持续、0 crash/ANR，`docs/verification/soak-report.md`）。
 - [ ] **T097** 执行 ≥3 小时 Soak，记录 device/Android/segments/gaps/tracks/crash/ANR/storage。
 - [x] **T098** 重复 Original checksums：capture 后、识曲后、Clean 后、纠错后必须一致（Session 5 18/18 分片一致；Clean 由 OriginalImmutabilityTest 覆盖，`docs/verification/checksum-verification.md`）。
 - [x] **T099** fresh APK prebuild：`./gradlew clean lintDebug testDebugUnitTest assembleDebug`，exit 0（`docs/verification/t099-prebuild.log`）。
 - [x] **T100** 确认 `app/build/outputs/apk/debug/app-debug.apk` 存在、非零并记录 SHA-256（74463170 bytes，`ef6899ce…a05b`）。
-- [ ] **T101** 用 ADB installDebug/启动最终 APK，在已连接手机完成 cold-start、权限、开始/结束、播放器 smoke test。
-- [ ] **T102** 核对 Android icon 在 launcher 多 mask 与 themed icon；核对 Splash 无双启动页。
-- [ ] **T103** 生成 `docs/verification/release-candidate.md`，汇总测试、ADB 截图、APK 路径、已知限制。
+- [x] **T101** 用 ADB installDebug/启动最终 APK，在已连接手机完成 cold-start、权限、开始/结束、播放器 smoke test（COLD 1244ms、FGS id=92、session READY、播放器 PLAYING，`docs/verification/t101-t102-device.md`）。
+- [x] **T102** 核对 Android icon 在 launcher 多 mask 与 themed icon；核对 Splash 无双启动页（adaptive+v33 monochrome；单 MainActivity 无双启动页；`docs/verification/t101-t102-device.md`）。
+- [x] **T103** 生成 `docs/verification/release-candidate.md`，汇总测试、ADB 截图、APK 路径、已知限制（含 T108 最终 APK 74463170 bytes / `b62c383d…b581`）。
 
 ## Phase 11: Spec Kit Convergence & Human Gate
 
@@ -149,7 +149,7 @@
 - [x] **T105** 若 converge 追加任务，继续实现所有新增任务；禁止跳过或只解释（无新增实现任务）。
 - [x] **T106** 重复 converge 直到 byte-for-byte 不再追加任务并报告 converged（Round 2 converged）。
 - [x] **T107** 最终执行 `/speckit.analyze` 等价 consistency review；CRITICAL/HIGH 必须为 0（CRITICAL=0，HIGH=0，`docs/verification/analyze-final.md`）。
-- [ ] **T108** 再次 fresh `test/lint/assembleDebug` + ADB smoke；仅使用这次输出作为完成证据。
+- [x] **T108** 再次 fresh `test/lint/assembleDebug` + ADB smoke；仅使用这次输出作为完成证据（`clean lintDebug testDebugUnitTest assembleDebug` exit 0；APK 74463170 bytes / `b62c383d…b581`；`docs/verification/t108-final-build.log`）。
 - [ ] **T109** 进入唯一 Human Gate：向用户一次性提交功能清单、已知限制、真机截图索引、APK 路径/hash、验证证据；此前中途不问人。
 - [x] **T110** 共享识曲预算（FR-059）：持久化请求计数与上限，达到上限暂停实时/补识别/手动请求，继续 Original，不自动购买额度，网络重试也计数；Settings 展示计数/上限。实现 `RequestBudget`（`Reliability.kt`）+ Settings（T090）。
 

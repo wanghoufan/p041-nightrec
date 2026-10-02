@@ -9,19 +9,19 @@
 | 项 | 值 |
 |---|---|
 | APK 路径 | `app/build/outputs/apk/debug/app-debug.apk` |
-| 大小 | 74463170 bytes（T099/T100 记录；T108 最终复算后更新） |
-| SHA-256 | `ef6899ce4a0e1c2ab75a7e429e4a649b528949008e4bd04a623904af0d59a05b`（T099/T100；T108 最终复算后更新） |
-| 构建命令 | `./gradlew clean lintDebug testDebugUnitTest assembleDebug`，exit 0 |
+| 大小 | 74463170 bytes（T108 最终复算） |
+| SHA-256 | `b62c383d1e20ba25b425d078335b1d424f9034ff10bc8caf29f545f199dbb581`（T108 最终 fresh 构建） |
+| 构建命令 | `./gradlew clean lintDebug testDebugUnitTest assembleDebug`，exit 0（BUILD SUCCESSFUL in 35s） |
 
-> 注：上面 hash 来自 T099 prebuild；T108 会以「最终一次 fresh 构建」的输出为准，届时若字节变化则替换本表。
+> 注：本表 hash 来自 T108「最终一次 fresh 构建」（`docs/verification/t108-final-build.log`）。T099 prebuild 的 hash（`ef6899ce…a05b`）与本次不同，因两次构建时间戳/签名元数据不同，属正常；**以本表 T108 值为准**。
 
 ## 2. 测试与静态检查证据
 
 | 项 | 结果 | 证据文件 |
 |---|---|---|
-| 单元测试 | 43 passed / 0 failed | `docs/verification/t094-t095-host.log` |
+| 单元测试 | 44 passed / 0 failed | `docs/verification/t108-final-build.log` |
 | instrumentation（真机） | OriginalImmutabilityTest PASS；RecognitionPersistenceTest PASS | adb 日志 / `docs/verification/recognition.md` |
-| lint | 0 errors / 46 warnings（版本建议类，无 HIGH correctness） | `docs/verification/t094-t095-host.log` |
+| lint | 0 errors / 46 warnings / 1 note（版本建议类，无 HIGH correctness） | `docs/verification/t108-final-build.log` |
 | 识曲真实命中 | `Warriors / Imagine Dragons`（AudD，真音源） | `docs/verification/recognition.md`、`spike-fresh-2026-10-02/routing-fix-events.jsonl` |
 | 端到端 | 开始→暂离→恢复→结束→立即 Original 播放→Marker seek→跨分片 | `docs/verification/end-to-end.md` |
 | 恢复 | 进程重启 / 断网 / 抢麦 / 低存储 | `docs/verification/recovery.md` |

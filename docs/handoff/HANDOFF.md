@@ -11,7 +11,15 @@
 
 ## A. 当前工作进展
 
-**总览**：T001–T110 共 111 项，已完成 **104 项**；剩 **7 项**（T094/T097/T101/T102/T103/T108/T109），均为收尾/真机验证性质，已到最后一段。
+**总览**：T001–T110 共 111 项，已完成 **109 项**；剩 **2 项**（T097 长测进行中、T109 Human Gate）。收尾已到最后一段。
+
+### 本轮收尾进展（2026-10-03）
+- **T094**：单测 44/0；产品 instrumentation 9/9（OriginalImmutabilityTest 2 / RecognitionPersistenceTest 5 / RoomBaselineTest 2）；SpikeDeviceTest 之 seek≤250ms 用例为边界偶发（正常 46–236ms，偶发 254–256ms），已记录不掩盖。证据 `docs/verification/t094-tests.md`。
+- **T108**：`./gradlew clean lintDebug testDebugUnitTest assembleDebug` exit 0；lint 0 error / 46 warning / 1 note；APK **74463170 bytes**，SHA-256 `b62c383d1e20ba25b425d078335b1d424f9034ff10bc8caf29f545f199dbb581`。证据 `docs/verification/t108-final-build.log`。
+- **T101**：最终 APK 真机 smoke 全通过——cold-start（COLD 1244ms、无 crash/ANR）、权限 grant、开始（FGS id=92 microphone）、结束（session READY）、播放器（MediaSession PLAYING）。证据 `docs/verification/t101-t102-device.md` + `device/t101-t102/`。
+- **T102**：adaptive（v26）+ monochrome（v33）图标；Manifest 仅 MainActivity、单任务单 Activity → Splash 无双启动页；真机图标渲染正常。
+- **T103**：`release-candidate.md` 回填 T108 最终 APK 大小/hash。
+- **T097**：3h 长测已启动（session id=2、锁屏 Asleep、实时识曲默认关），采样器 `scripts/nightrec/soak-sampler.py 2`，报告待完成后写 `soak-report.md`。
 
 ### 已实现并真机验证的功能（代码事实）
 - **工程/基础**：Kotlin 2.4.20 / AGP 9.4.0 / Gradle 9.6 / JDK17，compile·target 36、min 29；`com.nightrec.app`。Room schema v1（11 实体）已导出；`ClockProvider`；`SessionStateMachine`；`SafeLogger`（token 不落 release 日志）。
@@ -41,21 +49,16 @@
 
 ---
 
-## B. 下一步任务（按序执行，依赖优先）
+## B. 下一步任务
 
-> 剩余 7 项。**不依赖识曲额度的先做**。
+> 剩 2 项。
 
-1. **T094**（fresh 全量测试）：设备空闲时 `./gradlew testDebugUnitTest connectedDebugAndroidTest`，0 failed 才继续；结果写入 `docs/verification/`。
-2. **T101**（最终 APK ADB smoke）：`./gradlew :app:assembleDebug` → `adb -s indq5xfi6hovay4d install -r -t` → **~3s 内点「继续安装」(389,2114)** → 补 `pm grant` 权限 → cold-start / 权限 / 开始 / 结束 / 播放器 smoke。
-3. **T102**（图标与 Splash 真机核对）：launcher 多 mask + Android13 themed icon + 确认无双启动页。
-4. **T108**（最终一次 fresh 构建，**只以此为证据**）：`./gradlew clean lintDebug testDebugUnitTest assembleDebug` + ADB smoke。
-5. **T103 定稿**：用 T108 输出回填 `docs/verification/release-candidate.md` 的 APK 字节数与 SHA-256。
-6. **T097 补跑**（可选，用户决定）：≥3h Soak；**开始前必须先关「实时识曲」开关**；采样脚本 `scripts/nightrec/soak-sampler.py`；报告 `soak-report.md`。
-7. **T109**（唯一 Human Gate，一次性提交）：功能清单 / 已知限制 / 截图索引 / APK 路径+hash / 验证证据。
-8. 每步更新 `tasks.md` 勾选与 `HANDOFF.md`。
-9. **识曲重测（待用户付费）**：用户购买 AudD Indie（$5/月，1000 次）并把 token 填入 `local.properties` 后，重装并实机重测一次真实命中；节流已就位，1000 次预计可覆盖 6–8 小时一晚。
+1. **T097**（进行中）：3h 长测跑满后，用采样结果写 `docs/verification/soak-report.md`（device/Android/segments/gaps/tracks/crash/ANR/storage）。
+2. **T109**（唯一 Human Gate）：向用户一次性提交——功能清单 / 已知限制 / 真机截图索引 / APK 路径+hash / 验证证据。
+3. 每步更新 `tasks.md` 勾选与 `HANDOFF.md`。
+4. **识曲重测（待用户付费）**：用户购买 AudD Indie（$5/月，1000 次）并把 token 填入 `local.properties` 后，重装并实机重测一次真实命中；节流已就位，1000 次预计可覆盖 6–8 小时一晚。
 
-**当前未勾选项**：T094、T097、T101、T102、T103、T108、T109。
+**当前未勾选项**：T097、T109。
 
 ---
 
