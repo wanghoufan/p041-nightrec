@@ -1,3 +1,7 @@
+# T108 final fresh build — icon redesign (Plan A) + dead-switch fix
+# date: 2026-10-03 (Asia/Shanghai)
+# cmd: ./gradlew clean test assembleDebug
+
 > Task :app:clean
 > Task :app:preBuild UP-TO-DATE
 > Task :app:preDebugBuild UP-TO-DATE
@@ -16,22 +20,19 @@
 > Task :app:mergeDebugResources
 > Task :app:processDebugMainManifest
 > Task :app:processDebugManifest
-> Task :app:preDebugAndroidTestBuild SKIPPED
-> Task :app:extractProguardFiles
 > Task :app:preDebugUnitTestBuild UP-TO-DATE
 > Task :app:javaPreCompileDebugUnitTest
-> Task :app:processDebugManifestForPackage
 > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
 > Task :app:generateDebugAssets UP-TO-DATE
 > Task :app:mergeDebugAssets
 > Task :app:compressDebugAssets
-> Task :app:processDebugResources
 > Task :app:generateDebugGlobalSynthetics
 > Task :app:desugarDebugFileDependencies
 > Task :app:mergeDebugJniLibFolders
 > Task :app:validateSigningDebug
 > Task :app:writeDebugAppMetadata
 > Task :app:writeDebugSigningConfigVersions
+> Task :app:processDebugManifestForPackage
 > Task :app:checkDebugDuplicateClasses
 > Task :app:mergeDebugNativeLibs
 > Task :app:mergeLibDexDebug
@@ -39,6 +40,7 @@
 > Task :app:stripDebugDebugSymbols
 Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libtensorflowlite_jni.so. Run with --info option to learn more.
 
+> Task :app:processDebugResources
 > Task :app:kspDebugKotlin
 > Task :app:mergeExtDexDebug
 
@@ -47,35 +49,28 @@ w: file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/src/
 w: file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/src/debug/java/com/nightrec/app/probe/ProbeService.kt:56:21 Unnecessary safe call on a non-null receiver of type 'ProbeEncoder'.
 
 > Task :app:compileDebugJavaWithJavac
-> Task :app:bundleDebugClassesToCompileJar
-> Task :app:generateDebugLintReportModel
-> Task :app:generateDebugAndroidTestLintModel
-> Task :app:generateDebugUnitTestLintModel
-> Task :app:kspDebugUnitTestKotlin UP-TO-DATE
-> Task :app:bundleDebugClassesToRuntimeJar
 > Task :app:processDebugJavaRes
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:kspDebugUnitTestKotlin UP-TO-DATE
 > Task :app:mergeDebugJavaResource
 > Task :app:dexBuilderDebug
 > Task :app:mergeProjectDexDebug
 > Task :app:compileDebugUnitTestKotlin
+> Task :app:packageDebug
 > Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
 > Task :app:processDebugUnitTestJavaRes
 > Task :app:testDebugUnitTest
-> Task :app:lintAnalyzeDebugUnitTest
-> Task :app:packageDebug
+> Task :app:test
 > Task :app:createDebugApkListingFileRedirect
 > Task :app:assembleDebug
-> Task :app:lintAnalyzeDebugAndroidTest
-> Task :app:lintAnalyzeDebug
-
-> Task :app:lintReportDebug
-Wrote HTML report to file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/build/reports/lint-results-debug.html
-Wrote SARIF report to file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/app/build/reports/lint-results-debug.sarif
-
-> Task :app:lintDebug
 
 [Incubating] Problems report is available at: file:///Users/zzymima0000/Developer/coding/1.Active/041-ing-nightrec/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 39s
-56 actionable tasks: 55 executed, 1 up-to-date
+BUILD SUCCESSFUL in 13s
+47 actionable tasks: 46 executed, 1 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.0/userguide/configuration_cache_enabling.html
+
+=== APK ===
+-rw-r--r--@ 1 zzymima0000  staff  74463158 10月  3 13:31 app/build/outputs/apk/debug/app-debug.apk
+6ceb89afde8509547b799a96520d5c584d7814bd03df6e4aaad0fee0af55626b  app/build/outputs/apk/debug/app-debug.apk

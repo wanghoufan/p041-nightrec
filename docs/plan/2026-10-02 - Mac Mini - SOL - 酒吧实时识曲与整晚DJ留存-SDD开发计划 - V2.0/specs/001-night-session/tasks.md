@@ -140,8 +140,8 @@
 - [x] **T099** fresh APK prebuild：`./gradlew clean lintDebug testDebugUnitTest assembleDebug`，exit 0（`docs/verification/t099-prebuild.log`）。
 - [x] **T100** 确认 `app/build/outputs/apk/debug/app-debug.apk` 存在、非零并记录 SHA-256（74463170 bytes，`ef6899ce…a05b`）。
 - [x] **T101** 用 ADB installDebug/启动最终 APK，在已连接手机完成 cold-start、权限、开始/结束、播放器 smoke test（COLD 1244ms；复验 1251ms、FGS id=92、session READY、播放器 PLAYING；并复验死开关修复——关实时识曲录约 8 分钟 budget 恒 33，`docs/verification/t101-t102-device.md`）。
-- [x] **T102** 核对 Android icon 在 launcher 多 mask 与 themed icon；核对 Splash 无双启动页（adaptive+v33 monochrome；单 MainActivity 无双启动页；`docs/verification/t101-t102-device.md`）。
-- [x] **T103** 生成 `docs/verification/release-candidate.md`，汇总测试、ADB 截图、APK 路径、已知限制（含 T108 最终 APK 74463170 bytes / `e35194…3401`）。
+- [x] **T102** 核对 Android icon 与 Splash（adaptive+v33 monochrome；单 MainActivity 无双启动页；**图标按方案 A「均衡脉冲」重设计**——居中 + 收进安全区，`ic_wave.xml`/`ic_wave_mono.xml` 同几何，已重建装真机，launcher 渲染待用户目视确认；`docs/verification/t101-t102-device.md`）。
+- [x] **T103** 生成 `docs/verification/release-candidate.md`，汇总测试、ADB 截图、APK 路径、已知限制（含最新 APK 74463158 bytes / `6ceb89…526b`）。
 
 ## Phase 11: Spec Kit Convergence & Human Gate
 
@@ -149,7 +149,7 @@
 - [x] **T105** 若 converge 追加任务，继续实现所有新增任务；禁止跳过或只解释（无新增实现任务）。
 - [x] **T106** 重复 converge 直到 byte-for-byte 不再追加任务并报告 converged（Round 2 converged）。
 - [x] **T107** 最终执行 `/speckit.analyze` 等价 consistency review；CRITICAL/HIGH 必须为 0（CRITICAL=0，HIGH=0，`docs/verification/analyze-final.md`）。
-- [x] **T108** 再次 fresh `test/lint/assembleDebug` + ADB smoke；仅使用这次输出作为完成证据（死开关修复后重跑 `clean lintDebug testDebugUnitTest assembleDebug` exit 0 / 39s；单测 45/0；APK 74463170 bytes / `e35194…3401`；`docs/verification/t108-final-build.log`）。
+- [x] **T108** 再次 fresh `test/lint/assembleDebug` + ADB smoke；仅使用这次输出作为完成证据（**图标重设计 + 死开关修复后重跑** `clean test assembleDebug` exit 0 / 21s；单测 45/0；APK 74463158 bytes / `6ceb89…526b`；`docs/verification/t108-final-build.log`）。
 - [ ] **T109** 进入唯一 Human Gate：向用户一次性提交功能清单、已知限制、真机截图索引、APK 路径/hash、验证证据；此前中途不问人。
 - [x] **T110** 共享识曲预算（FR-059）：持久化请求计数与上限，达到上限暂停实时/补识别/手动请求，继续 Original，不自动购买额度，网络重试也计数；Settings 展示计数/上限。实现 `RequestBudget`（`Reliability.kt`）+ Settings（T090）。
 

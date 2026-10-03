@@ -1,6 +1,6 @@
 # HANDOFF｜NightRec 连续开发进度
 
-- Updated at：2026-10-03（Asia/Shanghai）「收尾 3」，死开关修复 + T097 重跑完成，仅剩 T109。
+- Updated at：2026-10-03（Asia/Shanghai）「收尾 4」，图标按方案 A 重设计 + 重建复算，仅剩 T109。
 - PROJECT_PHASE：DEVELOP；执行方式：**唯一开发者、连续推进、无 subagent**。
 - PLAN_VERSION / DEV_BASELINE：NightRec SDD 开发包 V2.0 + 用户批准的 AudD 增量；Constitution 2.1.0。
 - CHANGE_REQUEST：NONE（识曲节流属 B 类局部功能变化，已就地实现并记录，未重开 Plan）。
@@ -17,10 +17,10 @@
 - **T094**：单测 44/0；产品 instrumentation 9/9（OriginalImmutabilityTest 2 / RecognitionPersistenceTest 5 / RoomBaselineTest 2）；SpikeDeviceTest 之 seek≤250ms 用例为边界偶发（正常 46–236ms，偶发 254–256ms），已记录不掩盖。证据 `docs/verification/t094-tests.md`。
 - **T097**：3h 长测**重做完成**（session id=3，08:33→11:43+，锁屏、实时识曲关）。以「采集连续性」口径**通过**：3h10m、38 个封口分片（`00000`–`00037`，各约 7.26MB，带 `.sha256`）+ `00038.m4a.open`、FGS 存活、logcat 0 FATAL/0 ANR。末段采样出现 62 行空值（`fgs=false/free_kb=0`），实测为 **USB 与设备约 10:33 断连**（手机改以无线在线），App 录制未中断（分片严格 5 分钟步进），已在报告如实写明缺口与佐证。报告 `docs/verification/soak-report.md`、采样 `docs/verification/device/soak-samples.jsonl`。
 - **死开关修复（T097 暴露）**：长测发现「实时识曲」关闭开关不生效——`RecordingForegroundService.startRecognition` 被无条件调用，导致关着开关仍发请求（`budget.txt` 15→33）。修复：新增门控 `shouldStartLiveRecognition(settingsEnabled, liveRecognition)`，`startRecognition` 仅在「全局设置 ∧ 本次勾选」同时真时启动（改 `RecognitionPolicy.kt`/`RecordingForegroundService.kt`/`RecordingStateStore.kt`/`NightRecApp.kt`，服务读 `liveRecognition` extra 并跨 resume 保持），补单测 `liveRecognitionGateRequiresBothSettingsAndSessionToggle`。属 **B 类局部功能变化**，未重开 Plan。
-- **T108**：修复后重跑 `./gradlew clean lintDebug testDebugUnitTest assembleDebug` exit 0（39s）；lint 0 error / 46 warning / 1 note；单测 **45/0**；APK **74463170 bytes**，SHA-256 `e351940455747e2028c34c19af09bc889d79277c6999297135c7ec1728293401`（与修复前构建同 hash，确定性）。证据 `docs/verification/t108-final-build.log`。
+- **T108**：修复后重跑 `./gradlew clean test assembleDebug` exit 0；单测 **45/0**；APK **74463158 bytes**，SHA-256 `6ceb89afde8509547b799a96520d5c584d7814bd03df6e4aaad0fee0af55626b`（**图标方案 A 重设计 + 死开关修复后**，两次 fresh 构建同 hash，确定性）。lint 沿用 T108 结论（0 error / 46 warning，无 HIGH correctness，本轮为资源改动未重跑）。证据 `docs/verification/t108-final-build.log`。
 - **T101**：最终 APK 真机 smoke 全通过并**复验**——cold-start（复验 1251ms、无 crash/ANR）、权限 grant、开始（FGS id=92 microphone）、结束（session READY）、播放器（AudioPlayback `state:started`）；门控验证（关实时识曲）录制约 8 分钟 `budget.txt` 恒为 33 未增长。证据 `docs/verification/t101-t102-device.md` + `device/t101-t102/`。
-- **T102**：adaptive（v26）+ monochrome（v33）图标；Manifest 仅 MainActivity、单任务单 Activity → Splash 无双启动页；真机图标渲染正常。
-- **T103**：`release-candidate.md` 回填 T108 最终 APK 大小/hash（`e35194…3401`）。
+- **T102**：adaptive（v26）+ monochrome（v33）图标；**按方案 A「均衡脉冲」重设计**——108 视口 7 条脉冲、条宽 6、中心 x 精确 54（居中）、中央条高 56（y 26..82），全部收进 72dp 安全区（21–87），不再越界被 mask 裁切；`ic_wave.xml`（彩色）与 `ic_wave_mono.xml`（主题化）同几何。Manifest 仅 MainActivity、单任务单 Activity → Splash 无双启动页。已重建并装真机，launcher 渲染待用户解锁后目视确认。
+- **T103**：`release-candidate.md` 回填最新 APK 大小/hash（`6ceb89…526b`，74463158 bytes）。
 
 ### 已实现并真机验证的功能（代码事实）
 - **工程/基础**：Kotlin 2.4.20 / AGP 9.4.0 / Gradle 9.6 / JDK17，compile·target 36、min 29；`com.nightrec.app`。Room schema v1（11 实体）已导出；`ClockProvider`；`SessionStateMachine`；`SafeLogger`（token 不落 release 日志）。
@@ -47,7 +47,7 @@
 
 ### 已知关键问题
 - **AudD 服务端额度已耗尽**（铁证：`code=902 "the limit was reached."`）。实时/补识别/手动重识别均无法命中；**Original 采集、播放、整晚留存不受影响**。详见 §C。
-- 最新 debug APK 已装 `indq5xfi6hovay4d`；重装会清 DB 与 RECORD_AUDIO 权限（需补 grant）。
+- 最新 debug APK 已装 22101316C（ruby）；2026-10-03 起该机以无线在线 `192.168.31.31:5555`（USB `indq5xfi6hovay4d` 已断）；重装会清 DB 与 RECORD_AUDIO 权限（需补 grant）。
 
 ---
 
@@ -91,7 +91,7 @@
 ### 文档与仓库
 - `docs/verification/*.log` 为文档引用的证据，已在 `.gitignore` 显式放行（`!docs/verification/*.log`），会随仓交接。
 - **测试 fixture 不入库**：`app/src/debug/assets/*.mp3` 与 `app/src/androidTest/assets/cleanup-ab/` 被忽略（个人音频，版权）；**本机存在，换机需自备**，否则 20 样本 AB / 部分 instrumentation 无法重跑。
-- 会话残留（**待用户裁决，未删**）：根目录 `README.md` 已被删除、`README 2.md` 未入库。
+- 会话残留已清理（2026-10-03）：`README 2.md`（误入的「ORCA 新项目模板包」README）已 `git rm`；`AGENTS.md.旧版-2026-09-29`（与 git 历史 `e17616a:AGENTS.md` 逐字节一致，可从中恢复）已删除；根目录及子目录 5 个 `.DS_Store` 已删（本就被 `.gitignore` 忽略）。正式项目说明为根目录 `README.md` / `README.en.md`。
 - SDD 包归档：`docs/plan/` 的解压目录为现役 SDD 源（spec/plan/tasks 所在）；原始 `.zip` 归档已于 2026-10-02 按用户指令删除（内容与解压目录一致）。
 
 ### 交接纪律

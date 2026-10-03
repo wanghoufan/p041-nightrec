@@ -9,11 +9,11 @@
 | 项 | 值 |
 |---|---|
 | APK 路径 | `app/build/outputs/apk/debug/app-debug.apk` |
-| 大小 | 74463170 bytes（T108 最终复算） |
-| SHA-256 | `e351940455747e2028c34c19af09bc889d79277c6999297135c7ec1728293401`（T108 最终 fresh 构建，死开关修复后） |
-| 构建命令 | `./gradlew clean lintDebug testDebugUnitTest assembleDebug`，exit 0（BUILD SUCCESSFUL in 39s） |
+| 大小 | 74463158 bytes（图标重设计后 fresh 复算） |
+| SHA-256 | `6ceb89afde8509547b799a96520d5c584d7814bd03df6e4aaad0fee0af55626b`（图标重设计 + 死开关修复后 fresh 构建） |
+| 构建命令 | `./gradlew clean test assembleDebug`，exit 0（BUILD SUCCESSFUL） |
 
-> 注：本表 hash 来自 T108「最终一次 fresh 构建」（`docs/verification/t108-final-build.log`，2026-10-03 死开关修复后）。修复前后两次 fresh 构建均产出同一大小与 hash（确定性构建）；T099 prebuild 的 hash（`ef6899ce…a05b`）因早期版本不同，属正常；**以本表 T108 值为准**。
+> 注：本表 hash 来自最近一次 fresh 构建（2026-10-03，死开关修复并**图标按方案 A 重设计**后）。此前 T108 死开关修复版的 hash（`e3519404…3401`，74463170 bytes）为上一版；T099 prebuild 的 hash（`ef6899ce…a05b`）因早期版本不同，属正常；**以本表当前值为准**。lint 结论沿用 T108（0 errors / 46 warnings，无 HIGH correctness），本轮为资源（图标）改动，未重跑 lint。
 
 ## 2. 测试与静态检查证据
 
@@ -50,10 +50,11 @@
 
 ## 4. 图标与 Splash（T102）
 
+- **图标重设计（方案 A · 均衡脉冲，2026-10-03）**：`ic_wave.xml`（彩色）与 `ic_wave_mono.xml`（Android 13 主题化）统一几何——108 视口、7 条脉冲、条宽 6、中心 x 精确落于 54（居中），中央条高 56（y 26..82），全部收进 72dp 安全区（21–87），不再越界被 launcher mask 裁切。
 - `mipmap-anydpi-v26/ic_launcher.xml`：adaptive（`ic_icon_bg` + `ic_wave`）。
 - `mipmap-anydpi-v33/ic_launcher.xml`：额外 `monochrome`（`ic_wave_mono`）→ Android 13+ 主题化图标。
 - `Theme.NightRec.Starting` 继承 `Theme.SplashScreen`，`postSplashScreenTheme=Theme.NightRec`（Light/Dark 各一份）；Manifest **仅 MainActivity**，无独立 SplashActivity → 无双启动页。
-- 真机多 mask / themed icon 视觉核对在本 RC 安装后补（见 §6）。
+- 真机 launcher 多 mask / themed icon 视觉核对在本 RC 安装后补（见 §6）。
 
 ## 5. 已知限制（写清，不夸大）
 
@@ -66,6 +67,6 @@
 ## 6. 收尾完成情况（2026-10-03）
 
 - **T101**：最终 APK `adb install -r -t` → cold-start / 权限 / 开始 / 结束 / 播放器 smoke 全通过（复验 cold-start 1251ms）；证据 `t101-t102-device.md`。
-- **T102**：adaptive（v26）+ monochrome（v33）图标、Manifest 仅 MainActivity（Splash 无双页）；真机渲染正常。
-- **T108**：最终一次 fresh `clean lintDebug testDebugUnitTest assembleDebug` exit 0（39s），单测 45/0，§1 hash 已回填。
+- **T102**：adaptive（v26）+ monochrome（v33）图标、Manifest 仅 MainActivity（Splash 无双页）；**图标按方案 A 重设计**（居中 + 收进安全区，见 §4），重建后待真机 launcher 核对。
+- **T108**：最终一次 fresh `clean test assembleDebug` exit 0，单测 45/0，§1 hash 已回填（图标重设计后）。
 - **死开关修复**：T097 长测暴露「实时识曲」关闭开关不生效，已修复（门控 `shouldStartLiveRecognition`）并重建复验，详见 `t101-t102-device.md` §复验 与 `docs/decisions/recognition-request-throttling.md`。
