@@ -22,6 +22,7 @@ import com.nightrec.app.data.SessionGapEntity
 import com.nightrec.app.recovery.CaptureFailure
 import com.nightrec.app.recognition.RecognitionCoordinator
 import com.nightrec.app.recognition.RecognitionRequest
+import com.nightrec.app.recognition.shouldStartLiveRecognition
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -51,6 +52,7 @@ class RecordingForegroundService : Service() {
         const val ACTION_END = "com.nightrec.app.action.END"
         const val EXTRA_NAME = "name"
         const val EXTRA_PLACE = "place"
+        const val EXTRA_LIVE_RECOGNITION = "liveRecognition"
 
         private const val NOTIFICATION_ID = 92
         private const val RECOVERY_FAILED_NOTIFICATION_ID = 93
@@ -58,11 +60,12 @@ class RecordingForegroundService : Service() {
         private const val MAX_RECOVERY_ATTEMPTS = 3
 
         /** 从可见 Activity 调用的唯一入口。 */
-        fun startIntent(context: Context, name: String?, place: String?): Intent =
+        fun startIntent(context: Context, name: String?, place: String?, liveRecognition: Boolean = false): Intent =
             Intent(context, RecordingForegroundService::class.java)
                 .setAction(ACTION_START)
                 .putExtra(EXTRA_NAME, name)
                 .putExtra(EXTRA_PLACE, place)
+                .putExtra(EXTRA_LIVE_RECOGNITION, liveRecognition)
 
         fun actionIntent(context: Context, action: String): Intent =
             Intent(context, RecordingForegroundService::class.java).setAction(action)
@@ -93,7 +96,11 @@ class RecordingForegroundService : Service() {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         when (intent?.action) {
-            ACTION_START -> startCapture(intent.getStringExtra(EXTRA_NAME), intent.getStringExtra(EXTRA_PLACE))
+            ACTION_START -> startCapture(
+                intent.getStringExtra(EXTRA_NAME),
+                intent.getStringExtra(EXTRA_PLACE),
+                intent.getBooleanExtra(EXTRA_LIVE_RECOGNITION, false),
+            )
             ACTION_AWAY -> pauseCapture()
             ACTION_RESUME -> resumeCapture()
             ACTION_END -> endCapture()
@@ -101,7 +108,7 @@ class RecordingForegroundService : Service() {
         return START_NOT_STICKY
     }
 
-    private fun startCapture(name: String?, place: String?) {
+    private fun startCapture(name: String?, place: String?, liveRecognition: Boolean) {
         if (engine != null) return
         startForegroundCompat(RecordingPhase.RECORDING)
         wakeLock = (getSystemService(POWER_SERVICE) as PowerManager)
@@ -117,11 +124,17 @@ class RecordingForegroundService : Service() {
                 return@launch
             }
             app.recordingState.update {
-                it.copy(sessionId = sessionId, name = name, phase = RecordingPhase.RECORDING, logicalMs = 0)
+                it.copy(
+                    sessionId = sessionId,
+                    name = name,
+                    phase = RecordingPhase.RECORDING,
+                    logicalMs = 0,
+                    liveRecognition = liveRecognition,
+                )
             }
             app.sessionRepository.markRecording(sessionId)
             launchEngine(sessionId, startIndex = 0, logicalOffsetMs = 0)
-            startRecognition(sessionId)
+            startRecognitionIfEnabled(sessionId, liveRecognition)
         }
     }
 
@@ -136,7 +149,7 @@ class RecordingForegroundService : Service() {
         val sessionId = state.sessionId ?: return
         app.recordingState.update { it.copy(phase = RecordingPhase.RECORDING, awayStartedAtMs = null) }
         launchEngine(sessionId, startIndex = state.segmentIndex + 1, logicalOffsetMs = state.logicalMs)
-        if (recognitionJob == null) startRecognition(sessionId)
+        startRecognitionIfEnabled(sessionId, state.liveRecognition)
     }
 
     private fun launchEngine(sessionId: Long, startIndex: Int, logicalOffsetMs: Long) {
@@ -152,6 +165,19 @@ class RecordingForegroundService : Service() {
         this.engine = engine
         engine.start()
         startTicker()
+    }
+
+    /**
+     * 门控启动识别（2026-10-03 修复“死开关”）：仅当全局设置与本次开始页勾选同时为真才启动；
+     * 否则不创建识别消费者、不发任何请求。
+     */
+    private fun startRecognitionIfEnabled(sessionId: Long, liveRecognition: Boolean) {
+        if (recognitionJob != null) return
+        scope.launch {
+            if (shouldStartLiveRecognition(app.settings.current().recognitionEnabled, liveRecognition)) {
+                startRecognition(sessionId)
+            }
+        }
     }
 
     /**

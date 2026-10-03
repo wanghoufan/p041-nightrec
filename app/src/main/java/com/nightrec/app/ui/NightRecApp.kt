@@ -56,7 +56,7 @@ private sealed interface Screen {
     data class SessionDetail(val sessionId: Long) : Screen
 }
 
-private data class StartRequest(val name: String, val place: String?)
+private data class StartRequest(val name: String, val place: String?, val liveRecognition: Boolean)
 
 @Composable
 fun NightRecApp() {
@@ -105,7 +105,7 @@ private fun AppContent(onThemeMode: (ThemeMode) -> Unit) {
         pendingStart = null
         val granted = result[Manifest.permission.RECORD_AUDIO] ?: PermissionCoordinator.canCapture(context)
         if (granted && request != null) {
-            startRecording(context, request.name, request.place)
+            startRecording(context, request.name, request.place, request.liveRecognition)
         } else {
             Toast.makeText(context, "需要麦克风权限才能开始今晚", Toast.LENGTH_LONG).show()
         }
@@ -180,12 +180,12 @@ private fun AppContent(onThemeMode: (ThemeMode) -> Unit) {
         Screen.StartSession -> StartSessionScreen(
             defaultName = defaultSessionName(),
             onBack = { screen = Screen.Home },
-            onConfirm = { name, place, _clean, _liveRecognition ->
+            onConfirm = { name, place, _clean, liveRecognition ->
                 screen = Screen.Home
                 if (PermissionCoordinator.canCapture(context)) {
-                    startRecording(context, name, place)
+                    startRecording(context, name, place, liveRecognition)
                 } else {
-                    pendingStart = StartRequest(name, place)
+                    pendingStart = StartRequest(name, place, liveRecognition)
                     permissionLauncher.launch(PermissionCoordinator.required())
                 }
             },
@@ -230,10 +230,10 @@ private fun SessionDetailScreen(sessionId: Long, onBack: () -> Unit) {
     }
 }
 
-private fun startRecording(context: Context, name: String, place: String?) {
+private fun startRecording(context: Context, name: String, place: String?, liveRecognition: Boolean) {
     ContextCompat.startForegroundService(
         context,
-        RecordingForegroundService.startIntent(context, name, place),
+        RecordingForegroundService.startIntent(context, name, place, liveRecognition),
     )
 }
 

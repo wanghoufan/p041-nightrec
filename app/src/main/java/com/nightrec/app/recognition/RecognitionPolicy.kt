@@ -25,3 +25,12 @@ data class RecognitionPolicy(
         require(hitCooldownMs >= 0)
     }
 }
+
+/**
+ * 是否在录制时发起实时识曲（防额度空跑的开关门控，2026-10-03 修复）。
+ *
+ * 只有「设置里的全局识曲开关」与「开始页本次勾选」同时为真才启动识别；
+ * 任一为假则完全不启动识别消费者、不发任何请求。
+ */
+fun shouldStartLiveRecognition(settingsEnabled: Boolean, liveRecognition: Boolean): Boolean =
+    settingsEnabled && liveRecognition

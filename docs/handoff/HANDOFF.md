@@ -1,6 +1,6 @@
 # HANDOFF｜NightRec 连续开发进度
 
-- Updated at：2026-10-02（Asia/Shanghai）「大交接 2」，开发暂时收尾。
+- Updated at：2026-10-03（Asia/Shanghai）「收尾 3」，死开关修复 + T097 重跑完成，仅剩 T109。
 - PROJECT_PHASE：DEVELOP；执行方式：**唯一开发者、连续推进、无 subagent**。
 - PLAN_VERSION / DEV_BASELINE：NightRec SDD 开发包 V2.0 + 用户批准的 AudD 增量；Constitution 2.1.0。
 - CHANGE_REQUEST：NONE（识曲节流属 B 类局部功能变化，已就地实现并记录，未重开 Plan）。
@@ -11,15 +11,16 @@
 
 ## A. 当前工作进展
 
-**总览**：T001–T110 共 111 项，已完成 **109 项**；剩 **2 项**（T097 长测进行中、T109 Human Gate）。收尾已到最后一段。
+**总览**：T001–T110 共 111 项，已完成 **110 项**；剩 **1 项**（T109 Human Gate）。收尾只剩一步。
 
 ### 本轮收尾进展（2026-10-03）
 - **T094**：单测 44/0；产品 instrumentation 9/9（OriginalImmutabilityTest 2 / RecognitionPersistenceTest 5 / RoomBaselineTest 2）；SpikeDeviceTest 之 seek≤250ms 用例为边界偶发（正常 46–236ms，偶发 254–256ms），已记录不掩盖。证据 `docs/verification/t094-tests.md`。
-- **T108**：`./gradlew clean lintDebug testDebugUnitTest assembleDebug` exit 0；lint 0 error / 46 warning / 1 note；APK **74463170 bytes**，SHA-256 `b62c383d1e20ba25b425d078335b1d424f9034ff10bc8caf29f545f199dbb581`。证据 `docs/verification/t108-final-build.log`。
-- **T101**：最终 APK 真机 smoke 全通过——cold-start（COLD 1244ms、无 crash/ANR）、权限 grant、开始（FGS id=92 microphone）、结束（session READY）、播放器（MediaSession PLAYING）。证据 `docs/verification/t101-t102-device.md` + `device/t101-t102/`。
+- **T097**：3h 长测**重做完成**（session id=3，08:33→11:43+，锁屏、实时识曲关）。以「采集连续性」口径**通过**：3h10m、38 个封口分片（`00000`–`00037`，各约 7.26MB，带 `.sha256`）+ `00038.m4a.open`、FGS 存活、logcat 0 FATAL/0 ANR。末段采样出现 62 行空值（`fgs=false/free_kb=0`），实测为 **USB 与设备约 10:33 断连**（手机改以无线在线），App 录制未中断（分片严格 5 分钟步进），已在报告如实写明缺口与佐证。报告 `docs/verification/soak-report.md`、采样 `docs/verification/device/soak-samples.jsonl`。
+- **死开关修复（T097 暴露）**：长测发现「实时识曲」关闭开关不生效——`RecordingForegroundService.startRecognition` 被无条件调用，导致关着开关仍发请求（`budget.txt` 15→33）。修复：新增门控 `shouldStartLiveRecognition(settingsEnabled, liveRecognition)`，`startRecognition` 仅在「全局设置 ∧ 本次勾选」同时真时启动（改 `RecognitionPolicy.kt`/`RecordingForegroundService.kt`/`RecordingStateStore.kt`/`NightRecApp.kt`，服务读 `liveRecognition` extra 并跨 resume 保持），补单测 `liveRecognitionGateRequiresBothSettingsAndSessionToggle`。属 **B 类局部功能变化**，未重开 Plan。
+- **T108**：修复后重跑 `./gradlew clean lintDebug testDebugUnitTest assembleDebug` exit 0（39s）；lint 0 error / 46 warning / 1 note；单测 **45/0**；APK **74463170 bytes**，SHA-256 `e351940455747e2028c34c19af09bc889d79277c6999297135c7ec1728293401`（与修复前构建同 hash，确定性）。证据 `docs/verification/t108-final-build.log`。
+- **T101**：最终 APK 真机 smoke 全通过并**复验**——cold-start（复验 1251ms、无 crash/ANR）、权限 grant、开始（FGS id=92 microphone）、结束（session READY）、播放器（AudioPlayback `state:started`）；门控验证（关实时识曲）录制约 8 分钟 `budget.txt` 恒为 33 未增长。证据 `docs/verification/t101-t102-device.md` + `device/t101-t102/`。
 - **T102**：adaptive（v26）+ monochrome（v33）图标；Manifest 仅 MainActivity、单任务单 Activity → Splash 无双启动页；真机图标渲染正常。
-- **T103**：`release-candidate.md` 回填 T108 最终 APK 大小/hash。
-- **T097**：3h 长测已启动（session id=2、锁屏 Asleep、实时识曲默认关），采样器 `scripts/nightrec/soak-sampler.py 2`，报告待完成后写 `soak-report.md`。
+- **T103**：`release-candidate.md` 回填 T108 最终 APK 大小/hash（`e35194…3401`）。
 
 ### 已实现并真机验证的功能（代码事实）
 - **工程/基础**：Kotlin 2.4.20 / AGP 9.4.0 / Gradle 9.6 / JDK17，compile·target 36、min 29；`com.nightrec.app`。Room schema v1（11 实体）已导出；`ClockProvider`；`SessionStateMachine`；`SafeLogger`（token 不落 release 日志）。
@@ -34,13 +35,14 @@
   - 静音跳过（窗口 RMS < 300 不发请求，实时链 + 补识别链同判定）。
   - 命中冷却（命中后 60s 逻辑时间内不重复发请求）。
   - 「实时识曲」开关默认关闭。
-  - 决策文 `docs/decisions/recognition-request-throttling.md`；验证：单测 44 通过、真机 instrumentation 5 通过。
+  - **门控修复（2026-10-03）**：`startRecognition` 曾无条件调用致开关失效；现仅当「全局设置 ∧ 本次勾选」同真才启动（`shouldStartLiveRecognition`）。
+  - 决策文 `docs/decisions/recognition-request-throttling.md`；验证：单测 45 通过、真机 instrumentation 5 通过。
 
 ### 验证证据（均在 `docs/verification/`）
 - `traceability.md`（FR-001–FR-059 全映射）、`convergence.md`、`analyze-final.md`（CRITICAL=0/HIGH=0）。
 - `end-to-end.md`、`recovery.md`（真机 ADB 场景）、`clean-quality.md`（20 样本 AB）、`checksum-verification.md`（Session 5 18/18 分片一致）。
-- `soak-report.md`：T096 通过（30min 锁屏 Asleep、FGS 持续、0 crash/ANR）；**T097 未跑满 3h（实际约 89min）**。
-- `release-candidate.md`（T103 草稿，APK hash 待 T108 回填）；`t094-t095-host.log`、`t099-prebuild.log`。
+- `soak-report.md`：T096 通过（30min 锁屏 Asleep、FGS 持续、0 crash/ANR）；**T097 重做完成**（session 3，3h10m、38 封口分片、0 crash/ANR，采集连续性通过；末段 USB 断连缺口已如实记录）。
+- `release-candidate.md`（T103，APK hash 已回填 `e35194…3401`）；`t108-final-build.log`、`t094-t095-host.log`、`t099-prebuild.log`。
 - 真机截图：`docs/verification/device/final-ui/`（01–12）、`device/e2e/`。
 
 ### 已知关键问题
@@ -51,14 +53,13 @@
 
 ## B. 下一步任务
 
-> 剩 2 项。
+> 剩 1 项。
 
-1. **T097**（进行中）：3h 长测跑满后，用采样结果写 `docs/verification/soak-report.md`（device/Android/segments/gaps/tracks/crash/ANR/storage）。
-2. **T109**（唯一 Human Gate）：向用户一次性提交——功能清单 / 已知限制 / 真机截图索引 / APK 路径+hash / 验证证据。
-3. 每步更新 `tasks.md` 勾选与 `HANDOFF.md`。
-4. **识曲重测（待用户付费）**：用户购买 AudD Indie（$5/月，1000 次）并把 token 填入 `local.properties` 后，重装并实机重测一次真实命中；节流已就位，1000 次预计可覆盖 6–8 小时一晚。
+1. **T109**（唯一 Human Gate）：向用户一次性提交——功能清单 / 已知限制 / 真机截图索引 / APK 路径+hash / 验证证据。此为最终一步，需用户签收（首次发布）。
+2. 收尾后更新 `tasks.md` 勾选与 `HANDOFF.md`。
+3. **识曲重测（待用户付费）**：用户购买 AudD Indie（$5/月，1000 次）并把 token 填入 `local.properties` 后，重装并实机重测一次真实命中；节流已就位，1000 次预计可覆盖 6–8 小时一晚。
 
-**当前未勾选项**：T097、T109。
+**当前未勾选项**：T109。
 
 ---
 

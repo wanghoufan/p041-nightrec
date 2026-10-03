@@ -20,6 +20,8 @@ data class RecordingUiState(
     val currentArtist: String? = null,
     val previousTitle: String? = null,
     val previousArtist: String? = null,
+    /** 本场是否开启实时识曲（开始页勾选）；与全局设置共同门控识别（2026-10-03）。 */
+    val liveRecognition: Boolean = false,
 ) {
     val active: Boolean get() = phase != RecordingPhase.IDLE
 }

@@ -9,8 +9,10 @@ import com.nightrec.app.recognition.TimelineTrack
 import com.nightrec.app.recognition.TimelineUnknown
 import com.nightrec.app.recognition.TokenProvider
 import com.nightrec.app.recognition.TrackTimeline
+import com.nightrec.app.recognition.shouldStartLiveRecognition
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertThrows
@@ -68,6 +70,14 @@ class RecognitionTest {
         assertTrue(RecognitionWindow.rms(loud) >= 4_900)
         val gated = RecognitionWindow(10, 1, 1_000, 1_000, policy.silenceRmsThreshold)
         assertNotNull(gated.append(loud, 0))
+    }
+
+    @Test
+    fun liveRecognitionGateRequiresBothSettingsAndSessionToggle() {
+        assertTrue(shouldStartLiveRecognition(settingsEnabled = true, liveRecognition = true))
+        assertFalse(shouldStartLiveRecognition(settingsEnabled = false, liveRecognition = true))
+        assertFalse(shouldStartLiveRecognition(settingsEnabled = true, liveRecognition = false))
+        assertFalse(shouldStartLiveRecognition(settingsEnabled = false, liveRecognition = false))
     }
 
     @Test
