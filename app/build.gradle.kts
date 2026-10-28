@@ -1,14 +1,16 @@
 import java.util.Properties
 plugins { alias(libs.plugins.android.application); alias(libs.plugins.kotlin.compose); alias(libs.plugins.ksp) }
 val local = Properties().apply { rootProject.file("local.properties").inputStream().use { load(it) } }
+val auddToken = (System.getenv("AUDD_API_TOKEN") ?: local.getProperty("AUDD_API_TOKEN", "")).replace("\\", "\\\\").replace("\"", "\\\"")
+val auddLimit = local.getProperty("AUDD_REQUEST_LIMIT", "300")
 android {
  namespace = "com.nightrec.app"
  compileSdk = 36
  defaultConfig { applicationId = "com.nightrec.app"; minSdk = 29; targetSdk = 36; versionCode = 1; versionName = "1.0.0-debug"; testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner" }
  buildFeatures { compose = true; buildConfig = true }
  buildTypes {
-  debug { buildConfigField("String", "AUDD_TOKEN", "\"" + (System.getenv("AUDD_API_TOKEN") ?: local.getProperty("AUDD_API_TOKEN", "")).replace("\\", "\\\\").replace("\"", "\\\"") + "\""); buildConfigField("int", "AUDD_LIMIT", local.getProperty("AUDD_REQUEST_LIMIT", "300")) }
-  release { buildConfigField("String", "AUDD_TOKEN", "\"\""); buildConfigField("int", "AUDD_LIMIT", "0") }
+  debug { buildConfigField("String", "AUDD_TOKEN", "\"$auddToken\""); buildConfigField("int", "AUDD_LIMIT", auddLimit) }
+  release { buildConfigField("String", "AUDD_TOKEN", "\"$auddToken\""); buildConfigField("int", "AUDD_LIMIT", auddLimit) }
  }
  compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
  testOptions { animationsDisabled = true }
